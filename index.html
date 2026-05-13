@@ -112,9 +112,9 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <button class="day-btn" data-d="1">Feb 16<br>🎿 Ski!</button>
     <button class="day-btn" data-d="2">Feb 17<br>Nami Is.</button>
     <button class="day-btn" data-d="3">Feb 18<br>4 Palaces</button>
-    <button class="day-btn" data-d="4">Feb 19<br>Seoul Day</button>
-    <button class="day-btn" data-d="5">Feb 20<br>Eobi Valley</button>
-    <button class="day-btn" data-d="6">Feb 21<br>Last Day</button>
+    <button class="day-btn" data-d="4">Feb 19<br>Eobi Valley</button>
+    <button class="day-btn" data-d="5">Feb 20<br>Seoul Day</button>
+    <button class="day-btn warn" data-d="6">Feb 21<br>3AM ✈️</button>
   </div>
   <div id="daycontent"></div>
 </div>
@@ -179,7 +179,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;backgrou
     <p>All prices in Philippine Peso. Converted at ₩1,000 = ₱40 (approx). Check current rates before the trip — peso-won fluctuates.</p>
   </div>
 </div>
-<div class="footer">South Korea 2027 🇰🇷 · A trip for Marie ❤️ · Built with love in Baguio</div>
+<div class="footer">South Korea 2027 🇰🇷 · A trip for two ❤️ · Built with love in Baguio</div>
 <script>
 (function(){
 var SVG={
@@ -373,7 +373,7 @@ var ACTS=[
        'Dinner nearby: Korean BBQ, dakgalbi, seafood hotpot in the Dongdaemun food alleys']},
 
   // DAY 4
-  {day:4,bg:'#4A148C',ic:'shop',label:'Gwangjang Market, Seoul',time:'9 AM',
+  {day:5,bg:'#4A148C',ic:'shop',label:'Gwangjang Market, Seoul',time:'9 AM',
    name:'Gwangjang Market Morning',
    price:[{l:'food budget',v:'P400-P800'}],
    tip:"Gwangjang is best in the morning before crowds hit. Row 2 is the iconic food stall section - sit at a communal table surrounded by regulars and eat like a Seoulite.",
@@ -382,7 +382,7 @@ var ACTS=[
        'Also: bindaetteok (mung bean pancake), live yukhoe (beef tartare), japchae',
        'Sit at any communal bench surrounded by elderly Koreans - totally immersive',
        'Budget P400-P800 and eat until you physically cannot continue']},
-  {day:4,bg:'#004D40',ic:'camera',label:'Seongsu-dong, Seoul Forest',time:'11 AM',
+  {day:5,bg:'#004D40',ic:'camera',label:'Seongsu-dong, Seoul Forest',time:'11 AM',
    name:"Seongsu-dong - Seoul's Coolest Neighborhood + Seoul Forest",
    price:[{l:'cafes',v:'P200-P500'},{l:'Seoul Forest',v:'FREE'}],
    tip:"Seongsu-dong is what happens when Seoul's creative class takes over old industrial factories. Every cafe is a world of its own. Seoul Forest right next door is a massive urban park.",
@@ -392,7 +392,7 @@ var ACTS=[
        'Best specialty cafes: each one individually themed, some have rooftops',
        'Seoul Forest: 60-acre urban park right next to Seongsu, great winter stroll',
        'Seoul Forest: deer park, sculpture garden, frozen streams - peaceful break between areas']},
-  {day:4,bg:'#1A237E',ic:'tower',label:'Lotte World Tower, Songpa',time:'2 PM',
+  {day:5,bg:'#1A237E',ic:'tower',label:'Lotte World Tower, Songpa',time:'2 PM',
    name:'Lotte World Tower Sky31 Observation + Seokchon Lake',
    price:[{l:'Sky31 observation',v:'P2,000'},{l:'Lotte World theme park',v:'P2,800'}],
    tip:"Lotte World Tower is the 5th tallest building in the world at 555 meters. Sky31 gives stunning views of Seoul and Han River below. The lake surrounding the tower is beautiful even in winter.",
@@ -401,7 +401,7 @@ var ACTS=[
        'Lotte World theme park: indoor and outdoor rides, ice rink, parade at the base of the tower',
        'Seokchon Lake: 2.5km beautiful lakeside walk surrounding the tower',
        'The lake at night with the tower reflected in the water is incredibly photogenic']},
-  {day:4,bg:'#006064',ic:'map',label:'Gangnam, COEX, Bongeunsa Temple',time:'5 PM',
+  {day:5,bg:'#006064',ic:'map',label:'Gangnam, COEX, Bongeunsa Temple',time:'5 PM',
    name:'Gangnam + COEX Starfield Library + Bongeunsa Temple',
    price:[{l:'COEX entry',v:'FREE'},{l:'Bongeunsa',v:'FREE'},{l:'dinner',v:'P600-P1,400'}],
    tip:"COEX Starfield Library is one of the most beautiful free public spaces in Asia - towering bookshelves reaching the ceiling. Bongeunsa Temple across the street is an ancient Buddhist temple surrounded by skyscrapers.",
@@ -411,19 +411,23 @@ var ACTS=[
        'Bongeunsa Temple: 1,200-year-old Buddhist temple directly across from COEX',
        'Bongeunsa in the evening: lanterns lit, monks chanting, ancient against the skyscrapers',
        'Gangnam dining: wide range from affordable local spots to upscale Korean cuisine']},
-  {day:4,bg:'#1A0050',ic:'heart',label:'Han River, Banpo Bridge, Night',time:'8 PM',
-   name:'Han River Night - Banpo Bridge Rainbow Fountain',
-   price:[{l:'Han River entry',v:'FREE'},{l:'convenience store snacks',v:'P400-P800'}],
-   tip:"Yeouido Hangang Park is a 10-min walk from Yeongdeungpo - one of the best Han River spots in Seoul! Buy chicken and beer from a convenience store and find a spot by the water. Banpo Bridge Rainbow Fountain is slightly further but worth the 15-min taxi.",
-   hl:['Yeouido Hangang Park: a 10-min WALK from your Yeongdeungpo hotel - perfectly located!',
-       'Yeouido is the best Hangang park in Seoul - massive lawn, bike rental, fountains, food stalls',
-       'The move: fried chicken delivery and beer from convenience store tent on the riverbank',
-       'Banpo Bridge Rainbow Fountain: colored water jets shoot from both sides of the bridge at night',
-       'Bridge lights and Seoul skyline reflect off the dark water - stunningly romantic',
-       'Very local experience - this is exactly what Seoulites do on dates']},
+  {day:5,bg:'#1A0050',ic:'heart',label:'Han River Sunset Picnic, Yeouido',time:'5:30 PM',
+   name:'Han River Sunset Ramen Picnic - Yeouido',
+   badges:[{c:'bk-pk',t:'10-min walk from hotel!'},{c:'bk-am',t:'sunset ~6 PM Feb'}],
+   price:[{l:'Han River entry',v:'FREE'},{l:'CU/GS25 ramen + snacks',v:'P200-P400'}],
+   tip:'February sunset in Seoul is around 6:00-6:15 PM. Head out by 5:30 PM from the hotel (10-min walk) to catch the golden hour before sunset. CU and GS25 convenience stores at Yeouido Hangang Park have gas burners and instant ramen you cook right there - this is a full Korean experience.',
+   hl:['Yeouido Hangang Park: 10-min WALK from your Yeongdeungpo hotel - no taxi, no subway needed',
+       'Arrive by 5:30 PM to find a good spot on the lawn facing the river for golden hour',
+       'February sunset: 6:00-6:15 PM - the sky turns pink and orange over the Han River',
+       'THE MOVE: buy instant ramen at the CU or GS25 inside the park - they provide portable gas burners',
+       'Cook ramen right there on the riverbank - eat hot noodles watching the Seoul sunset together',
+       'Also grab: kimbap, hotteok, hot corn, banana milk, beer or hot canned coffee',
+       'After sunset: the Seoul skyline and 63 Building light up across the river - stunning',
+       'Banpo Bridge Rainbow Fountain: 15-min taxi away if you want to see the colored water jets at night',
+       'One of the most genuinely romantic and local things you can do in all of Seoul']},
 
   // DAY 5 - OPTION D
-  {day:5,bg:'#006064',ic:'snow',label:'Eobi Ice Valley, Gapyeong',time:'9 AM',
+  {day:4,bg:'#006064',ic:'snow',label:'Eobi Ice Valley, Gapyeong',time:'9 AM',
    name:'Eobi Ice Valley - Natural Frozen Waterfall Canyon',
    badges:[{c:'bk-bl',t:'Gapyeong area, same ITX line as Nami Island'}],
    price:[{l:'valley entry',v:'P200'},{l:'ITX roundtrip',v:'P456'},{l:'taxi from station',v:'P400'}],
@@ -434,7 +438,7 @@ var ACTS=[
        'Completely natural and wild - no crowds, no tour groups',
        'February is peak season when the ice formations are at their thickest',
        'Done by 11:30 AM then Strawberry Farm']},
-  {day:5,bg:'#E65100',ic:'fork',label:'Gapyeong Strawberry Farm',time:'12 PM',
+  {day:4,bg:'#E65100',ic:'fork',label:'Gapyeong Strawberry Farm',time:'12 PM',
    name:'Gapyeong Strawberry Picking + Farm Lunch',
    price:[{l:'pick-your-own',v:'P480-P600/person'},{l:'eat what you pick',v:'included'}],
    tip:"Gapyeong is famous throughout Korea for its strawberry farms. February is prime season - the cold weather makes the berries sweeter. You pick from the greenhouse and eat as you go.",
@@ -444,7 +448,7 @@ var ACTS=[
        'You pay a flat fee and eat everything you can pick during your session (30-45 min)',
        'Very popular couple date activity - book ahead or arrive early, farms fill up by noon',
        'Buy extra to take back: fresh Gapyeong strawberries are the best local pasalubong']},
-  {day:5,bg:'#2E7D32',ic:'tree',label:'Alpaca World, Gapyeong',time:'1:30 PM',
+  {day:4,bg:'#2E7D32',ic:'tree',label:'Alpaca World, Gapyeong',time:'1:30 PM',
    name:'Alpaca World - Feed and Pet Alpacas',
    price:[{l:'entrance',v:'P600'},{l:'animal feed',v:'P80-P160'},{l:'taxi from farm',v:'P400'}],
    tip:"Alpaca World is a 15-min taxi from the strawberry farms. Book timed entry tickets online in advance. Winter is the best time to visit because the animals are extra fluffy and the farm looks beautiful in snow.",
@@ -456,7 +460,7 @@ var ACTS=[
        'The deer feeding section in snow is the most photogenic spot in the whole park',
        'Book timed entry tickets online at Naver or Alpaca World official site',
        'Done by 4 PM then return to Seoul, arrive around 6 PM']},
-  {day:5,bg:'#37474F',ic:'fork',label:'Itaewon, Seoul Evening',time:'7 PM',
+  {day:4,bg:'#37474F',ic:'fork',label:'Itaewon, Seoul Evening',time:'7 PM',
    name:'Itaewon Dinner - International Food District',
    tip:"Itaewon is Seoul's international food district. After a full day in Gapyeong nature, a relaxed international dinner is perfect before the last full day.",
    hl:['Itaewon: Seoul most internationally diverse food neighborhood',
@@ -466,19 +470,31 @@ var ACTS=[
        'Great final evening meal before the last full day in Seoul tomorrow']},
 
   // DAY 6
-  {day:6,bg:'#37474F',ic:'shop',label:'Namdaemun, Myeongdong, Last Run',time:'9 AM',
-   name:'Namdaemun Market + Myeongdong K-Beauty Final Haul',
-   price:[{l:'Namdaemun',v:'budget!'},{l:'Olive Young',v:'budget!'},{l:'last meal',v:'P320-P480'}],
-   tip:"From Yeongdeungpo, take Line 1 to Seoul Station (10 min, 4 stops) then AREX Express to ICN (43 min). Namdaemun Market is right next to Seoul Station - perfect last stop before the airport. Leave the hotel 3 hrs before your flight.",
-   hl:["Namdaemun Market: Korea's oldest market, best last-day shopping for clothes and accessories",
-       'Best pasalubong: Pepero boxes, honey butter chips, Choco Pie, Maxim coffee mix, gochujang paste',
-       "Myeongdong Olive Young: Korea biggest beauty chain, COSRX, Laneige, Innisfree at best prices",
-       'Last Korean meal: haejang-guk (hangover soup) or kalguksu near Namdaemun for under P400',
-       'Bonus: Times Square Mall and IFC Mall are right outside Yeongdeungpo Station - last-minute shopping!',
-       'Duty-free at ICN Airport: K-beauty products and Korean liquor at airport prices',
-       'From Yeongdeungpo: Line 1 to Seoul Station (10 min) then AREX Express to ICN (43 min, P380)',
-       'ICN Terminal 1 vs Terminal 2 - confirm your terminal before heading to the station!',
+  {day:6,bg:'#C62828',ic:'warn',label:'6:35 AM Flight ICN to MNL',time:'~11:30 PM or 1 AM',
+   name:'EARLY DEPARTURE - Last Train OR 1 AM Night Bus to ICN',
+   badges:[{c:'bk-rd',t:'6:35 AM flight'},{c:'bk-am',t:'2 options!'}],
+   price:[{l:'Option A: last AREX train',v:'P248 total'},{l:'Option B: Bus 6021 at 1 AM',v:'P600-P680'}],
+   tip:"Two solid options to get to ICN for your 6:35 AM flight. Check-in opens around 4 AM so you need to be there by 4:00-4:30 AM at the latest. Both options depart from Yeongdeungpo area.",
+   warns:['Pack ALL bags on the night of Feb 20 - no time to pack on departure morning!'],
+   hl:['OPTION A - Last AREX Train (cheapest): Line 1 from Yeongdeungpo to Seoul Station (10 min, P52) then last AREX all-stop train departs Seoul Station ~11:32 PM, arrives ICN ~12:30 AM (P196) - sleep/rest at the airport until check-in opens at 4 AM',
+       'OPTION B - 1 AM Night Bus (most balanced): walk to Bus 6021 stop at Yeouido/Yeongdeungpo, departs 1 AM, arrives ICN ~2:30 AM (P600-P680) - short wait before check-in opens',
+       'ICN Airport is open 24hrs: rest zones, reclining chairs, 24hr CU/GS25 convenience stores, restaurants - comfortable to wait in either case',
+       'Check-in counter opens ~4 AM - queue early for smooth immigration',
+       'After check-in: duty-free run for last K-beauty, soju, Korean snacks',
+       'Board at 6 AM, depart 6:35 AM to Manila',
+       'Confirm terminal BEFORE leaving hotel: Terminal 2 (Korean Air, Delta) vs Terminal 1 (everyone else)',
        'Annyeong Korea - until the next trip!']},
+
+  {day:6,bg:'#37474F',ic:'shop',label:'Feb 20 Evening - Pasalubong Run!',time:'Evening of Feb 20',
+   name:'Do ALL Shopping on Feb 20 Evening (Night Before)',
+   tip:"Since your Feb 21 flight is at 6:35 AM, do ALL pasalubong and shopping on the evening of Feb 20 after returning from Gapyeong. No time on departure morning!",
+   hl:['After Gapyeong (around 6 PM): head to Myeongdong or Yeongdeungpo for shopping',
+       'Times Square Mall at Yeongdeungpo Station: open until 10 PM, K-beauty and snacks',
+       'Olive Young Myeongdong: best prices on COSRX, Laneige, Innisfree, Numbuzin',
+       'Best pasalubong: Pepero boxes, honey butter chips, Choco Pie, Maxim coffee mix, gochujang',
+       'Also great: Korean sheet face masks, red ginseng candy, banana milk powder',
+       'Pack everything into checked bags tonight - liquids and food in checked baggage only!',
+       'Sleep early - alarm is at 2:30 AM!']},
 ];
 
 var META=[
@@ -486,9 +502,9 @@ var META=[
   {title:'Feb 16 - Full Ski Day (Freshest Snow!)',sub:'Elysian Gangchon, ITX train, slopes, sauna, night skiing till 9 PM'},
   {title:'Feb 17 - Gapyeong Full Day Trip',sub:'Nami Island, Rail Bike, Petite France, Garden of Morning Calm, Sinchon dinner'},
   {title:'Feb 18 - ALL 4 PALACES + Neighborhoods',sub:'Gyeongbokgung, Bukchon, Ikseon-dong, Jogyesa, Changdeokgung, Gyeonghuigung, Deoksugung, Cheonggyecheon, DDP'},
-  {title:'Feb 19 - Packed Seoul City Day',sub:'Gwangjang Market, Seongsu-dong, Seoul Forest, Lotte World Tower, Gangnam COEX, Bongeunsa, Han River night'},
-  {title:'Feb 20 - Gapyeong Winter: Eobi Ice Valley + Alpaca World',sub:'Frozen waterfall canyon, strawberry picking, alpaca farm, Itaewon dinner'},
-  {title:'Feb 21 - Last Morning + Departure',sub:'Namdaemun Market, Myeongdong Olive Young K-beauty haul, last Korean meal, AREX to ICN'},
+  {title:"Feb 19 - Gapyeong Winter: Eobi Ice Valley + Alpaca World",sub:"Frozen waterfall canyon, strawberry picking, alpaca farm, Itaewon dinner"},
+  {title:"Feb 20 - Packed Seoul City Day",sub:"Gwangjang Market, Seongsu-dong, Seoul Forest, Lotte World Tower, Gangnam COEX, Bongeunsa, Han River sunset picnic"},
+  {title:'Feb 21 - 3 AM Wake-up + 6:35 AM Flight to MNL',sub:'Leave hotel 3 AM, Bus 6021 or taxi to ICN, duty-free, ICN to MNL 6:35 AM'},
 ];
 
 function buildDays(){
@@ -514,21 +530,22 @@ function buildDays(){
   document.querySelectorAll('#daynav .day-btn').forEach(function(b){
     b.addEventListener('click',function(){
       var d=this.getAttribute('data-d');
+      activeDay=parseInt(d);
       document.querySelectorAll('#daynav .day-btn').forEach(function(x){x.classList.remove('on');});
       document.querySelectorAll('.day-panel').forEach(function(x){x.classList.remove('on');});
       this.classList.add('on'); document.getElementById('dp'+d).classList.add('on');
-      window.scrollTo(0,0);
     });
   });
 }
+var activeDay=0;
 buildDays();
 document.querySelectorAll('#mainnav .nav-btn').forEach(function(b){
   b.addEventListener('click',function(){
     var t=this.getAttribute('data-t');
     document.querySelectorAll('#mainnav .nav-btn').forEach(function(x){x.classList.remove('on');});
     document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
-    this.classList.add('on'); document.getElementById('t'+t).classList.add('on');
-    window.scrollTo(0,0);
+    this.classList.add('on');
+    document.getElementById('t'+t).classList.add('on');
   });
 });
 var TARGET=new Date('2027-02-15T04:00:00+09:00').getTime();
