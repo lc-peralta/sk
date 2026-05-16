@@ -2,613 +2,716 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>South Korea 2027 — Couple Trip Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>South Korea 2027 ❄️</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bl:#1565C0;--tl:#E3F2FD;--tm:#42A5F5;--td:#0D47A1;--tdd:#082B8A;--red:#C62828;--rl:#FFEBEE;--rb:#EF9A9A;--am:#7B4500;--aml:#FFF3E0;--amb:#FFB300;--gn:#2E7D32;--gnl:#E8F5E9;--pk:#880E4F;--pkl:#FCE4EC;--pkb:#F48FB1;--tx:#111;--txs:#444;--txm:#888;--bg:#fff;--bgs:#fff;--br:rgba(0,0,0,.12);--r:10px;--rl2:14px}
-@media(prefers-color-scheme:dark){:root{--tx:#F0F0EE;--txs:#BBB;--txm:#777;--bg:#121212;--bgs:#1E1E1E;--br:rgba(255,255,255,.12);--tl:#0D2B5E;--tm:#1565C0;--rl:#2A0A0A;--aml:#2A1800;--gnl:#0A1F0A;--pkl:#2A0A1A}}
-*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
-body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:var(--bg);color:var(--tx);max-width:600px;margin:0 auto}
-.hero{background:linear-gradient(135deg,#0D2B6B 0%,#1565C0 100%);padding:1.75rem 1.25rem 1.25rem;color:#fff}
-.hero-title{font-size:22px;font-weight:700;margin-bottom:3px;display:flex;align-items:center;gap:9px}
-.hero-sub{font-size:13px;opacity:.85;margin-bottom:1.1rem}
-.stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.stat{background:rgba(255,255,255,.15);border-radius:var(--r);padding:9px 12px}
-.stat-label{font-size:11px;opacity:.8;margin-bottom:2px}
-.stat-value{font-size:14px;font-weight:600}
-.bk{display:inline-block;font-size:10px;font-weight:600;padding:2px 7px;border-radius:20px}
-.bk-bl{background:var(--tl);color:var(--td)}.bk-am{background:var(--aml);color:var(--am)}.bk-rd{background:var(--rl);color:var(--red)}.bk-gn{background:var(--gnl);color:var(--gn)}.bk-pk{background:var(--pkl);color:var(--pk)}.bk-w{background:rgba(255,255,255,.25);color:#fff}
-.cd-bar{display:flex;align-items:center;gap:5px;background:#082563;padding:10px 1.25rem;color:#fff}
-.cd-unit{display:flex;flex-direction:column;align-items:center;min-width:34px}
-.cd-num{font-size:20px;font-weight:700;line-height:1;font-family:'SF Mono',monospace;font-variant-numeric:tabular-nums}
-.cd-lbl{font-size:9px;opacity:.7;text-transform:uppercase;letter-spacing:.05em;margin-top:1px}
-.cd-sep{font-size:18px;font-weight:700;opacity:.45;margin-bottom:6px}
-.cd-msg{font-size:12px;opacity:.75;margin-left:6px;flex:1}
-.nav{display:flex;gap:5px;overflow-x:auto;padding:11px 1.25rem;background:var(--bg);border-bottom:1px solid var(--br);position:sticky;top:0;z-index:10;scrollbar-width:none}
-.nav::-webkit-scrollbar{display:none}
-.nav-btn{flex-shrink:0;padding:7px 14px;font-size:12px;font-weight:600;border-radius:20px;border:1.5px solid var(--br);cursor:pointer;background:var(--bg);color:var(--txs);display:flex;align-items:center;gap:6px;white-space:nowrap}
-.nav-btn.on{background:var(--tl);border-color:var(--bl);color:var(--td)}
-.panel{display:none;padding:1.25rem}.panel.on{display:block}
-.day-nav{display:flex;gap:5px;overflow-x:auto;margin-bottom:1.25rem;scrollbar-width:none}
-.day-nav::-webkit-scrollbar{display:none}
-.day-btn{flex-shrink:0;padding:7px 10px;font-size:11px;font-weight:600;border-radius:var(--r);border:1.5px solid var(--br);cursor:pointer;background:var(--bg);color:var(--txs);text-align:center;line-height:1.4;min-width:58px}
-.day-btn.on{background:var(--tl);border-color:var(--bl);color:var(--td)}
-.day-btn.warn{border-color:var(--rb)}
-.day-panel{display:none}.day-panel.on{display:block}
-.day-hdr{font-size:17px;font-weight:700;margin-bottom:2px}
-.day-sub{font-size:13px;color:var(--txs);margin-bottom:1rem}
-.card{background:var(--bg);border:1px solid var(--br);border-radius:var(--rl2);margin-bottom:11px;overflow:hidden;box-shadow:0 1px 4px rgba(0,0,0,.05)}
-.photo{height:130px;display:flex;align-items:center;justify-content:center;position:relative}
-.photo-label{position:absolute;bottom:7px;left:9px;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(0,0,0,.45);color:#fff}
-.photo-time{position:absolute;top:7px;right:9px;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;background:rgba(0,0,0,.3);color:#fff}
-.card-body{padding:12px 14px}
-.card-name{font-size:14px;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;line-height:1.4}
-.prices{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:7px}
-.pc{font-size:12px;font-weight:500;padding:3px 9px;border-radius:var(--r);border:1px solid var(--br);background:var(--bgs)}
-.pc .l{font-weight:400;color:var(--txs);margin-right:3px}
-.tipbox{border-radius:var(--r);padding:8px 11px;font-size:12px;margin-bottom:7px;display:flex;gap:7px;line-height:1.5;align-items:flex-start}
-.tipbox.info{background:var(--aml);color:var(--am)}.tipbox.warn{background:var(--rl);color:var(--red)}.tipbox.note{background:var(--tl);color:var(--td)}.tipbox.love{background:var(--pkl);color:var(--pk)}
-.hl{list-style:none;display:flex;flex-direction:column;gap:4px}
-.hl li{font-size:12px;color:var(--txs);display:flex;gap:7px;line-height:1.5;align-items:flex-start}
-.sec{font-size:13px;font-weight:600;color:var(--txs);margin:1.25rem 0 .5rem;display:flex;align-items:center;gap:6px}
-.wx-card{background:var(--bgs);border-radius:var(--rl2);padding:1.1rem;margin-bottom:1rem;display:flex;align-items:center;justify-content:space-between;gap:12px;border:1px solid var(--br)}
-.wx-temp{font-size:36px;font-weight:700;line-height:1}
-.wx-cond{font-size:13px;color:var(--txs);margin-top:2px}
-.wx-r{text-align:right;font-size:12px;color:var(--txm)}
-.wx-fc{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:1rem}
-.wx-day{background:var(--bgs);border-radius:var(--r);padding:.5rem .3rem;text-align:center;border:1px solid var(--br)}
-.wx-dn{font-size:10px;color:var(--txm);margin-bottom:3px}
-.wx-dh{font-size:12px;font-weight:600;margin-bottom:1px}
-.wx-dl{font-size:10px;color:var(--bl);margin-bottom:2px}
-.wx-dr{font-size:10px;color:var(--txs)}
-.wx-bar{height:3px;border-radius:2px;background:var(--br);margin-top:3px;overflow:hidden}
-.wx-fi{height:100%;border-radius:2px;background:#378ADD}
-.wx-trip{background:var(--tl);border:1px solid var(--tm);border-radius:var(--r);padding:11px 13px;margin-bottom:1rem}
-.wx-tt{font-size:13px;font-weight:600;color:var(--td);margin-bottom:5px;display:flex;align-items:center;gap:5px}
-.wx-tx{font-size:12px;color:var(--td);line-height:1.6}
-.bsec{font-size:13px;font-weight:600;color:var(--txs);margin:.9rem 0 .4rem;display:flex;align-items:center;gap:5px}
-.blist{display:flex;flex-direction:column;gap:3px;margin-bottom:.5rem}
-.brow{display:flex;justify-content:space-between;align-items:center;font-size:12px;padding:6px 9px;border-radius:var(--r)}
-.brow:nth-child(odd){background:var(--bgs)}
-.bn{color:var(--txs)}.bnote{font-size:10px;color:var(--txm)}.ba{font-weight:600}
-.opt{display:flex;align-items:center;gap:9px;padding:9px 12px;border:1.5px solid var(--br);border-radius:var(--r);cursor:pointer;background:var(--bg);margin-bottom:5px;user-select:none}
-.opt.on{background:var(--tl);border-color:var(--bl)}
-.ochk{width:20px;height:20px;border-radius:5px;border:1.5px solid var(--br);flex-shrink:0;display:flex;align-items:center;justify-content:center}
-.opt.on .ochk{background:var(--bl);border-color:var(--bl)}
-.oname{flex:1;font-size:13px}.oprice{font-size:12px;color:var(--txs);font-weight:500}
-.footer{text-align:center;padding:2rem 1.25rem;font-size:12px;color:var(--txm);border-top:1px solid var(--br)}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:'DM Sans',sans-serif;background:#fafafa;max-width:480px;margin:0 auto;overflow-x:hidden}
+.profile{background:#fff;padding:20px 16px 0;border-bottom:1px solid #dbdbdb}
+.profile-row{display:flex;align-items:center;gap:20px;margin-bottom:14px}
+.avatar{width:77px;height:77px;border-radius:50%;background:conic-gradient(#CD2E3A,#0047A0,#CD2E3A,#0047A0);padding:2.5px;flex-shrink:0}
+.avatar-inner{width:100%;height:100%;border-radius:50%;background:#fff;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:30px}
+.profile-nums{display:flex;flex:1;justify-content:space-around}
+.pn{text-align:center}
+.pn-val{font-size:17px;font-weight:700;color:#111;display:block}
+.pn-lbl{font-size:12px;color:#555}
+.profile-name{font-size:14px;font-weight:700;color:#111;margin-bottom:3px}
+.profile-bio{font-size:13px;color:#333;line-height:1.4;margin-bottom:14px}
+.highlights{display:flex;gap:14px;padding:14px 16px;background:#fff;overflow-x:auto;scrollbar-width:none;border-bottom:1px solid #dbdbdb}
+.highlights::-webkit-scrollbar{display:none}
+.hl{text-align:center;flex-shrink:0;cursor:pointer;-webkit-user-select:none;user-select:none}
+.hl-ring{width:62px;height:62px;border-radius:50%;background:conic-gradient(#CD2E3A,#0047A0,#CD2E3A);padding:2.5px;margin-bottom:5px;transition:.15s transform}
+.hl-ring.seen{background:#dbdbdb}
+.hl:active .hl-ring{transform:scale(.94)}
+.hl-inner{width:100%;height:100%;border-radius:50%;background:#fff;border:2px solid #fff;display:flex;align-items:center;justify-content:center;font-size:22px}
+.hl-name{font-size:10px;color:#333}
+.tabs{display:flex;background:#fff;border-bottom:1px solid #dbdbdb;position:sticky;top:0;z-index:30}
+.tab-btn{flex:1;padding:11px 0;border:none;background:none;cursor:pointer;color:#8e8e8e;border-top:1px solid transparent;transition:.15s;display:flex;align-items:center;justify-content:center}
+.tab-btn.on{color:#111;border-top-color:#111}
+.day-label{padding:9px 12px 5px;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8e8e8e;background:#fafafa;display:flex;align-items:center;gap:8px}
+.day-label .dl-date{font-weight:400;text-transform:none;letter-spacing:0;font-size:10px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-bottom:3px}
+.grid-item{aspect-ratio:1/1;position:relative;overflow:hidden;cursor:pointer;background:#eee}
+.gi-bg{position:absolute;inset:0;width:100%;height:100%;transition:transform .25s ease}
+.grid-item:active .gi-bg{transform:scale(.97)}
+.gi-emoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:50px;opacity:.22}
+.gi-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.62) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:8px}
+.gi-name{font-size:10px;font-weight:600;color:#fff;line-height:1.3}
+.gi-time{font-size:9px;color:rgba(255,255,255,.75);margin-top:1px}
+.gi-badge{position:absolute;top:6px;left:6px;font-size:8px;font-weight:700;padding:2px 7px;border-radius:20px;background:rgba(255,255,255,.22);backdrop-filter:blur(4px);color:#fff;border:1px solid rgba(255,255,255,.3);letter-spacing:.04em;text-transform:uppercase}
+.gi-multi{position:absolute;top:6px;right:6px;display:flex;gap:2px}
+.gi-multi span{width:5px;height:5px;border-radius:50%;background:rgba(255,255,255,.5)}
+.gi-multi span.cur{background:#fff}
+/* STORY OVERLAY */
+.story-overlay{position:fixed;inset:0;z-index:200;background:#000;display:none;flex-direction:column}
+.story-overlay.open{display:flex}
+.story-prog-row{position:absolute;top:0;left:0;right:0;display:flex;gap:3px;padding:10px 10px 0;z-index:10}
+.story-bar-track{flex:1;height:2px;border-radius:2px;background:rgba(255,255,255,.35);overflow:hidden}
+.story-bar-fill{height:100%;border-radius:2px;background:#fff;width:0%}
+.story-hdr{position:absolute;top:18px;left:0;right:0;display:flex;align-items:center;gap:10px;padding:0 14px;z-index:10}
+.story-av{width:32px;height:32px;border-radius:50%;background:conic-gradient(#CD2E3A,#0047A0,#CD2E3A);display:flex;align-items:center;justify-content:center;font-size:15px;flex-shrink:0;border:1.5px solid #fff}
+.story-user{font-size:13px;font-weight:600;color:#fff;flex:1}
+.story-ago{font-size:11px;color:rgba(255,255,255,.65)}
+.story-x{width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.3);border:none;cursor:pointer;color:#fff;font-size:18px;display:flex;align-items:center;justify-content:center}
+.story-tap-l,.story-tap-r{position:absolute;top:0;bottom:0;width:38%;z-index:8;cursor:pointer}
+.story-tap-l{left:0}
+.story-tap-r{right:0}
+.story-slide{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.story-bg{position:absolute;inset:0}
+.story-content{position:relative;z-index:3;width:100%;padding:80px 22px 60px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:9px}
+.story-emoji{font-size:68px;filter:drop-shadow(0 4px 24px rgba(0,0,0,.35));margin-bottom:4px}
+.story-badge{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.85);background:rgba(255,255,255,.15);padding:4px 12px;border-radius:20px;border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(6px)}
+.story-title{font-size:24px;font-weight:700;color:#fff;line-height:1.2;text-shadow:0 2px 16px rgba(0,0,0,.4)}
+.story-sub{font-size:13px;color:rgba(255,255,255,.8);line-height:1.4}
+.story-chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin-top:2px}
+.story-chip{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:rgba(255,255,255,.18);color:#fff;border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(4px)}
+.story-pts{width:100%;text-align:left;display:flex;flex-direction:column;gap:5px}
+.story-pt{font-size:12px;color:rgba(255,255,255,.92);display:flex;gap:8px;line-height:1.5;align-items:flex-start}
+.story-pt::before{content:'✓';font-weight:700;flex-shrink:0;margin-top:1px}
+.story-tip{width:100%;text-align:left;background:rgba(0,0,0,.3);backdrop-filter:blur(10px);border-radius:10px;padding:10px 14px;font-size:12px;color:rgba(255,255,255,.9);line-height:1.55;border:1px solid rgba(255,255,255,.15)}
+.story-warn{width:100%;text-align:left;background:rgba(180,20,20,.4);backdrop-filter:blur(10px);border-radius:10px;padding:10px 14px;font-size:12px;color:#fff;line-height:1.55;border:1px solid rgba(255,80,80,.4)}
+.story-swipe-hint{position:absolute;bottom:24px;left:0;right:0;text-align:center;font-size:11px;color:rgba(255,255,255,.35);z-index:10}
+/* POST MODAL */
+.post-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:100;display:none;align-items:flex-end;justify-content:center}
+.post-backdrop.open{display:flex}
+.post-modal{background:#fff;width:100%;max-width:480px;border-radius:14px 14px 0 0;max-height:92vh;display:flex;flex-direction:column;overflow:hidden;animation:slideUp .2s ease}
+@keyframes slideUp{from{transform:translateY(20px);opacity:.6}to{transform:translateY(0);opacity:1}}
+.drag-hdl{width:36px;height:4px;border-radius:2px;background:#ddd;margin:10px auto 0;flex-shrink:0}
+.post-hdr{display:flex;align-items:center;gap:9px;padding:10px 12px 8px;border-bottom:.5px solid #efefef;flex-shrink:0}
+.ph-av{width:30px;height:30px;border-radius:50%;background:conic-gradient(#CD2E3A,#0047A0,#CD2E3A);display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;border:1.5px solid transparent}
+.ph-info{flex:1;min-width:0}
+.ph-name{font-size:12.5px;font-weight:700;color:#111;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ph-loc{font-size:10.5px;color:#888;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ph-x{background:none;border:none;cursor:pointer;font-size:20px;color:#333;padding:4px;line-height:1;flex-shrink:0}
+.modal-scroll{overflow-y:auto;flex:1;scrollbar-width:none}
+.modal-scroll::-webkit-scrollbar{display:none}
+.carousel-wrap{width:100%;height:clamp(200px,56vw,280px);overflow:hidden;position:relative;touch-action:pan-y;user-select:none;-webkit-user-select:none;flex-shrink:0}
+.carousel-track{display:flex;height:100%;will-change:transform;transition:transform .28s cubic-bezier(.4,0,.2,1)}
+.carousel-slide{flex-shrink:0;width:100%;height:100%;position:relative;overflow:hidden}
+.cs-bg{position:absolute;inset:0}
+.cs-emoji{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:64px;opacity:.2}
+.cs-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.65) 0%,transparent 50%);display:flex;flex-direction:column;justify-content:flex-end;padding:12px}
+.cs-badge{position:absolute;top:9px;left:9px;font-size:9px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:20px;background:rgba(255,255,255,.2);color:#fff;border:1px solid rgba(255,255,255,.3)}
+.cs-title{font-size:16px;font-weight:700;color:#fff;line-height:1.25}
+.cs-sub{font-size:10.5px;color:rgba(255,255,255,.82);margin-top:2px}
+.dots-row{display:flex;justify-content:center;gap:4px;padding:7px 0 4px;flex-shrink:0}
+.dot{width:5px;height:5px;border-radius:50%;background:#dbdbdb;transition:.2s}
+.dot.on{background:#0047A0}
+.post-actions{display:flex;align-items:center;padding:4px 12px 4px;gap:12px;flex-shrink:0}
+.pact{background:none;border:none;cursor:pointer;font-size:22px;line-height:1;padding:4px 2px}
+.pact-save{margin-left:auto}
+.post-likes{font-size:13px;font-weight:600;color:#111;padding:2px 12px 5px}
+.post-caption{font-size:13px;color:#333;line-height:1.45;padding:0 12px 7px}
+.post-caption strong{color:#111;font-weight:700}
+.htag{color:#00376b}
+.pr-row{display:flex;flex-wrap:wrap;gap:4px;padding:0 12px 7px}
+.pr-chip{font-size:10.5px;font-weight:600;padding:3px 9px;border-radius:20px;background:#EBF3FF;color:#0047A0;border:1px solid #90CAF9}
+.tip-b{margin:0 12px 7px;background:#fffbf0;border-left:3px solid #c9a84c;padding:7px 10px;font-size:11.5px;color:#5a4000;line-height:1.5}
+.warn-b{margin:0 12px 7px;background:#fff5f5;border-left:3px solid #C62828;padding:7px 10px;font-size:11.5px;color:#7f0000;line-height:1.5}
+.hl-ul{padding:0 12px 8px;display:flex;flex-direction:column;gap:3px;list-style:none}
+.hl-ul li{font-size:11.5px;color:#444;display:flex;gap:7px;line-height:1.45;align-items:flex-start}
+.hl-ul li::before{content:'✓';color:#0047A0;font-weight:700;flex-shrink:0;margin-top:1px}
+.post-tags{padding:0 12px 20px;font-size:11px;color:#00376b;line-height:1.6}
+/* PANELS */
+.panel{display:none;padding:16px}
+.panel.on{display:block}
+.bh-card{background:linear-gradient(135deg,#0D47A1,#1565C0);border-radius:16px;padding:22px;text-align:center;margin-bottom:16px;color:#fff}
+.bh-lbl{font-size:11px;opacity:.75;margin-bottom:5px}
+.bh-amt{font-size:38px;font-weight:700}
+.bh-note{font-size:11px;opacity:.6;margin-top:4px}
+.bsec{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#8e8e8e;margin:14px 0 7px}
+.brow{display:flex;justify-content:space-between;align-items:center;padding:10px 13px;background:#fff;border-radius:10px;margin-bottom:3px}
+.br-name{font-size:13px;color:#333}
+.br-note{font-size:10px;color:#aaa;margin-top:1px}
+.br-amt{font-size:13px;font-weight:700;color:#111}
+.opt-row{display:flex;align-items:center;gap:10px;padding:11px 13px;background:#fff;border-radius:10px;margin-bottom:3px;cursor:pointer;border:1.5px solid transparent;transition:.15s}
+.opt-row.on{border-color:#0047A0;background:#EBF3FF}
+.opt-chk{width:22px;height:22px;border-radius:50%;border:2px solid #dbdbdb;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:.15s}
+.opt-row.on .opt-chk{background:#0047A0;border-color:#0047A0}
+.opt-name{flex:1;font-size:13px;color:#333}
+.opt-amt{font-size:13px;font-weight:700;color:#0047A0}
+.wx-hero{background:linear-gradient(135deg,#0D2060,#0D47A1);border-radius:16px;padding:22px;color:#fff;margin-bottom:12px;display:flex;align-items:center;gap:16px}
+.wx-temp{font-size:46px;font-weight:700;line-height:1}
+.wx-cond{font-size:13px;opacity:.8;margin-top:3px}
+.wx-loc{font-size:11px;opacity:.6;margin-top:6px}
+.wx-fc{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:12px}
+.wx-d{background:#fff;border-radius:10px;padding:8px 4px;text-align:center}
+.wx-dn{font-size:9px;color:#aaa;margin-bottom:3px}
+.wx-dt{font-size:13px;font-weight:700;color:#111}
+.wx-dl{font-size:10px;color:#0047A0;margin-top:1px}
+.wx-dr{font-size:9px;color:#888;margin-top:2px}
+.wx-meta{display:grid;grid-template-columns:1fr 1fr 1fr;gap:7px;margin-bottom:12px}
+.wx-m{background:#fff;border-radius:10px;padding:12px;text-align:center}
+.wx-ml{font-size:10px;color:#aaa;margin-bottom:4px}
+.wx-mv{font-size:15px;font-weight:700;color:#111}
+.wx-note{background:#EBF3FF;border-radius:12px;padding:14px 16px;font-size:12px;color:#0D2060;line-height:1.65;margin-bottom:10px}
+.wx-note strong{color:#0D47A1;display:block;margin-bottom:4px}
+.wx-pack{background:#fff;border-radius:12px;padding:14px 16px;font-size:12px;color:#333;line-height:1.65}
+.wx-pack strong{color:#111;display:block;margin-bottom:8px}
+.wx-pack li{display:flex;gap:8px;margin-bottom:4px;list-style:none;align-items:flex-start}
+.wx-pack li::before{content:'✓';color:#0047A0;font-weight:700;flex-shrink:0}
+.exrate{background:#FFF3E0;border:1px solid #FFB300;border-radius:10px;padding:12px 14px;margin-top:12px;font-size:12px;color:#7B4500}
+.exrate strong{display:block;font-weight:700;margin-bottom:3px}
 </style>
 </head>
 <body>
-<div class="hero">
-  <p class="hero-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>South Korea 2027</p>
-  <p class="hero-sub">Seoul · Gangchon · Gapyeong · Eobi Valley · Feb 15–21, 2027</p>
-  <div class="stats">
-    <div class="stat"><p class="stat-label">Duration</p><p class="stat-value">7 days · 6 nights</p></div>
-    <div class="stat"><p class="stat-label">Avg temp</p><p class="stat-value">-2°C to 5°C ❄️</p></div>
-    <div class="stat"><p class="stat-label">Trip type</p><p class="stat-value">Couple trip ❤️</p></div>
-    <div class="stat"><p class="stat-label">Spots</p><p class="stat-value">4 palaces · 10+ places</p></div>
-  </div>
-</div>
-<div class="cd-bar">
-  <div class="cd-unit"><span class="cd-num" id="cd-d">--</span><span class="cd-lbl">days</span></div>
-  <div class="cd-sep">:</div>
-  <div class="cd-unit"><span class="cd-num" id="cd-h">--</span><span class="cd-lbl">hrs</span></div>
-  <div class="cd-sep">:</div>
-  <div class="cd-unit"><span class="cd-num" id="cd-m">--</span><span class="cd-lbl">min</span></div>
-  <div class="cd-sep">:</div>
-  <div class="cd-unit"><span class="cd-num" id="cd-s">--</span><span class="cd-lbl">sec</span></div>
-  <span class="cd-msg">until Korea for two 🇰🇷❤️</span>
-</div>
-<nav class="nav" id="mainnav">
-  <button class="nav-btn on" data-t="0"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18.5l-7-3.5V5l7 3.5V18.5M12 18.5l7-3.5V5l-7 3.5M5 5l7 3.5"/></svg>Itinerary</button>
-  <button class="nav-btn" data-t="1"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>Weather</button>
-  <button class="nav-btn" data-t="2"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/></svg>Budget</button>
-</nav>
-<div class="panel on" id="t0">
 
-  <div class="day-nav" id="daynav">
-    <button class="day-btn on" data-d="0">Feb 15<br>Arrival</button>
-    <button class="day-btn" data-d="1">Feb 16<br>🎿 Ski!</button>
-    <button class="day-btn" data-d="2">Feb 17<br>Nami Is.</button>
-    <button class="day-btn" data-d="3">Feb 18<br>4 Palaces</button>
-    <button class="day-btn" data-d="4">Feb 19<br>Eobi Valley</button>
-    <button class="day-btn" data-d="5">Feb 20<br>Seoul Day</button>
-    <button class="day-btn warn" data-d="6">Feb 21<br>3AM ✈️</button>
-  </div>
-  <div id="daycontent"></div>
-</div>
-<div class="panel" id="t1">
-  <div class="wx-card">
-    <div style="display:flex;align-items:center;gap:13px">
-      <svg width="38" height="38" viewBox="0 0 24 24" fill="none" stroke="var(--bl)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-      <div><p class="wx-temp">-1°C</p><p class="wx-cond">Seoul · February average</p></div>
+<!-- PROFILE -->
+<div class="profile">
+  <div class="profile-row">
+    <div class="avatar"><div class="avatar-inner">🇰🇷</div></div>
+    <div class="profile-nums">
+      <div class="pn"><span class="pn-val">7</span><span class="pn-lbl">days</span></div>
+      <div class="pn"><span class="pn-val">20+</span><span class="pn-lbl">stops</span></div>
+      <div class="pn"><span class="pn-val">4</span><span class="pn-lbl">palaces</span></div>
     </div>
-    <div class="wx-r"><p>Seoul, South Korea</p><p style="margin-top:3px">Historical avg · Feb</p></div>
   </div>
-  <div style="background:var(--tl);border:1px solid var(--tm);border-radius:var(--r);padding:10px 13px;margin-bottom:1rem;font-size:12px;color:var(--td);display:flex;gap:8px;align-items:flex-start">
-    <svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-    <span>Based on Korea Meteorological Administration historical averages for Seoul in February.</span>
+  <div class="profile-name">couple.korea2027</div>
+  <div class="profile-bio">Seoul · Gangchon · Gapyeong · Feb 15–21, 2027 ❄️<br>Couple trip · -4°C to 5°C · ₱40k+ excl. flights</div>
+</div>
+
+<!-- HIGHLIGHTS -->
+<div class="highlights" id="highlights"></div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab-btn on" onclick="switchTab('grid',this)">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+  </button>
+  <button class="tab-btn" onclick="switchTab('weather',this)">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+  </button>
+  <button class="tab-btn" onclick="switchTab('budget',this)">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+  </button>
+</div>
+
+<!-- GRID -->
+<div id="grid"></div>
+
+<!-- WEATHER -->
+<div class="panel" id="weather">
+  <div class="wx-hero">
+    <div><div class="wx-temp">-1°C</div><div class="wx-cond">Seoul · February average ❄️</div><div class="wx-loc">Seoul, South Korea</div></div>
+    <div style="text-align:right;font-size:11px;color:rgba(255,255,255,.6);flex:1">Historical avg · KMA</div>
   </div>
-  <p class="sec">Daily forecast: Feb 15–21</p>
   <div class="wx-fc">
-    <div class="wx-day"><p class="wx-dn">Feb 15</p><p class="wx-dh">4°C</p><p class="wx-dl">-3°C</p><p class="wx-dr">20%</p><div class="wx-bar"><div class="wx-fi" style="width:20%"></div></div></div>
-    <div class="wx-day"><p class="wx-dn">Feb 16</p><p class="wx-dh">2°C</p><p class="wx-dl">-5°C</p><p class="wx-dr">30%❄️</p><div class="wx-bar"><div class="wx-fi" style="width:30%"></div></div></div>
-    <div class="wx-day"><p class="wx-dn">Feb 17</p><p class="wx-dh">4°C</p><p class="wx-dl">-2°C</p><p class="wx-dr">25%</p><div class="wx-bar"><div class="wx-fi" style="width:25%"></div></div></div>
-    <div class="wx-day"><p class="wx-dn">Feb 18</p><p class="wx-dh">3°C</p><p class="wx-dl">-4°C</p><p class="wx-dr">15%</p><div class="wx-bar"><div class="wx-fi" style="width:15%"></div></div></div>
-    <div class="wx-day"><p class="wx-dn">Feb 19</p><p class="wx-dh">5°C</p><p class="wx-dl">-2°C</p><p class="wx-dr">20%</p><div class="wx-bar"><div class="wx-fi" style="width:20%"></div></div></div>
-    <div class="wx-day"><p class="wx-dn">Feb 20</p><p class="wx-dh">3°C</p><p class="wx-dl">-4°C</p><p class="wx-dr">25%</p><div class="wx-bar"><div class="wx-fi" style="width:25%"></div></div></div>
-    <div class="wx-day"><p class="wx-dn">Feb 21</p><p class="wx-dh">5°C</p><p class="wx-dl">-2°C</p><p class="wx-dr">15%</p><div class="wx-bar"><div class="wx-fi" style="width:15%"></div></div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 15</div><div class="wx-dt">4°C</div><div class="wx-dl">-3°C</div><div class="wx-dr">20%</div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 16</div><div class="wx-dt">2°C</div><div class="wx-dl">-5°C</div><div class="wx-dr">30% ❄️</div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 17</div><div class="wx-dt">4°C</div><div class="wx-dl">-2°C</div><div class="wx-dr">25%</div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 18</div><div class="wx-dt">3°C</div><div class="wx-dl">-4°C</div><div class="wx-dr">15%</div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 19</div><div class="wx-dt">5°C</div><div class="wx-dl">-2°C</div><div class="wx-dr">20%</div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 20</div><div class="wx-dt">3°C</div><div class="wx-dl">-4°C</div><div class="wx-dr">25%</div></div>
+    <div class="wx-d"><div class="wx-dn">Feb 21</div><div class="wx-dt">5°C</div><div class="wx-dl">-2°C</div><div class="wx-dr">15%</div></div>
   </div>
-  <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:1rem">
-    <div style="background:var(--bgs);border:1px solid var(--br);border-radius:var(--r);padding:9px;text-align:center"><p style="font-size:11px;color:var(--txm);margin-bottom:3px">Avg high</p><p style="font-size:15px;font-weight:700">4°C</p></div>
-    <div style="background:var(--bgs);border:1px solid var(--br);border-radius:var(--r);padding:9px;text-align:center"><p style="font-size:11px;color:var(--txm);margin-bottom:3px">Avg low</p><p style="font-size:15px;font-weight:700;color:var(--bl)">-4°C</p></div>
-    <div style="background:var(--bgs);border:1px solid var(--br);border-radius:var(--r);padding:9px;text-align:center"><p style="font-size:11px;color:var(--txm);margin-bottom:3px">Snow</p><p style="font-size:15px;font-weight:700">Likely ❄️</p></div>
+  <div class="wx-meta">
+    <div class="wx-m"><div class="wx-ml">Avg high</div><div class="wx-mv">4°C</div></div>
+    <div class="wx-m"><div class="wx-ml">Avg low</div><div class="wx-mv" style="color:#0047A0">-4°C</div></div>
+    <div class="wx-m"><div class="wx-ml">Snow</div><div class="wx-mv">Likely ❄️</div></div>
   </div>
-  <div class="wx-trip">
-    <p class="wx-tt"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--td)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>What to wear</p>
-    <p class="wx-tx">Peak winter — -5°C to 5°C with wind chill. Thermals are non-negotiable. Layer: thermal top+bottom → fleece → heavy puffer jacket. Waterproof snow boots (not sneakers — streets ice over at night). Gloves, beanie, neck gaiter. Hand warmers (핫팩) are sold at every convenience store for ₩500–₩1,000.</p>
-  </div>
-  <div style="background:var(--aml);border:1px solid var(--amb);border-radius:var(--r);padding:11px 13px">
-    <p style="font-size:13px;font-weight:600;color:var(--am);margin-bottom:7px">Packing essentials ❄️</p>
-    <ul class="hl">
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Thermal top + bottom (bring 2–3 sets each)</span></li>
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Heavy down or puffer jacket</span></li>
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Waterproof gloves + beanie + neck gaiter</span></li>
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Waterproof snow boots — NOT regular sneakers</span></li>
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Lip balm + thick moisturizer — air is brutally dry</span></li>
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>T-money card — subway, bus, some cafes (buy at airport)</span></li>
-      <li><svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--am)" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg><span>Pocket hand warmers — life-saving at ski day and outdoor activities</span></li>
+  <div class="wx-note"><strong>❄️ What to wear Feb 15–21</strong>Peak winter — -5°C to 5°C with wind chill. Thermals are NON-NEGOTIABLE. Layer: thermal → fleece → heavy puffer. Waterproof snow boots (streets ice over at night). Gloves + beanie + neck gaiter. Hand warmers (핫팩) at every convenience store for ₩500–1,000.</div>
+  <div class="wx-pack">
+    <strong>🧳 Packing essentials</strong>
+    <ul>
+      <li>Thermal top + bottom (bring 2–3 sets each)</li>
+      <li>Heavy down or puffer jacket — non-negotiable</li>
+      <li>Waterproof gloves + beanie + neck gaiter</li>
+      <li>Waterproof snow boots — NOT regular sneakers</li>
+      <li>Lip balm + thick moisturizer — air is brutally dry</li>
+      <li>T-money card — subway, bus, some cafes (buy at airport)</li>
+      <li>Pocket hand warmers — life-saving at ski day and outdoor spots</li>
     </ul>
   </div>
 </div>
-<div class="panel" id="t2">
-  <div style="background:var(--tl);border:1.5px solid var(--tm);border-radius:var(--rl2);padding:1rem;text-align:center;margin-bottom:1.25rem">
-    <p style="font-size:12px;color:var(--td);margin-bottom:4px">Estimated cost per person (excl. flights + accommodation)</p>
-    <p style="font-size:28px;font-weight:700;color:var(--tdd)" id="totpp">₱0</p>
-    <p style="font-size:11px;color:var(--td);margin-top:4px">in Philippine Peso · all-in estimate · actual may vary</p>
+
+<!-- BUDGET -->
+<div class="panel" id="budget">
+  <div class="bh-card"><div class="bh-lbl">Estimated cost per person (excl. flights + accommodation)</div><div class="bh-amt" id="totpp">₱0</div><div class="bh-note">in Philippine Peso · all-in estimate · actual may vary</div></div>
+  <div class="bsec">🔒 Fixed per person</div><div id="fixedlist"></div>
+  <div class="bsec">🎿 Activity packages</div><div id="sharedlist"></div>
+  <div class="bsec">✨ Optional add-ons</div><div id="optlist"></div>
+  <div class="exrate"><strong>Exchange rate used</strong>All prices in Philippine Peso. Converted at ₩1,000 = ₱40 (approx). Check current rates before the trip — peso-won fluctuates.</div>
+</div>
+
+<!-- STORY OVERLAY -->
+<div class="story-overlay" id="storyOverlay">
+  <div class="story-prog-row" id="storyProgs"></div>
+  <div class="story-hdr">
+    <div class="story-av" id="storyAv">🇰🇷</div>
+    <div><div class="story-user">couple.korea2027</div><div class="story-ago" id="storyAgo"></div></div>
+    <button class="story-x" onclick="closeStory()">✕</button>
   </div>
-  <p class="bsec"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/></svg>Fixed expenses (per person)</p>
-  <div class="blist" id="fixedlist"></div>
-  <p class="bsec"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>Day tour packages</p>
-  <div class="blist" id="sharedlist"></div>
-  <p class="bsec"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Optional add-ons</p>
-  <div id="optlist"></div>
-  <div style="background:var(--aml);border:1px solid var(--amb);border-radius:var(--r);padding:11px 13px;margin-top:1rem;font-size:12px;color:var(--am)">
-    <p style="font-weight:600;margin-bottom:4px">Exchange rate used</p>
-    <p>All prices in Philippine Peso. Converted at ₩1,000 = ₱40 (approx). Check current rates before the trip — peso-won fluctuates.</p>
+  <div class="story-tap-l" onclick="storyNav(-1)"></div>
+  <div class="story-tap-r" onclick="storyNav(1)"></div>
+  <div id="storySlide" class="story-slide"></div>
+  <div class="story-swipe-hint">swipe down to close</div>
+</div>
+
+<!-- POST CAROUSEL MODAL -->
+<div class="post-backdrop" id="postBackdrop" onclick="closePostModal(event)">
+  <div class="post-modal" id="postModal">
+    <div class="drag-hdl"></div>
+    <div class="post-hdr">
+      <div class="ph-av" id="phAv">🇰🇷</div>
+      <div class="ph-info"><div class="ph-name" id="phName"></div><div class="ph-loc" id="phLoc"></div></div>
+      <button class="ph-x" onclick="closePostModal()">✕</button>
+    </div>
+    <div class="carousel-wrap" id="carouselWrap">
+      <div class="carousel-track" id="carouselTrack"></div>
+    </div>
+    <div class="dots-row" id="dotsRow"></div>
+    <div class="modal-scroll">
+      <div class="post-actions">
+        <button class="pact">❤️</button>
+        <button class="pact">💬</button>
+        <button class="pact">📤</button>
+        <button class="pact pact-save">🔖</button>
+      </div>
+      <div class="post-likes">Trip group liked this</div>
+      <div id="postBody"></div>
+    </div>
   </div>
 </div>
-<div class="footer">South Korea 2027 🇰🇷 · A trip for two ❤️ · Built with love in Baguio</div>
+
 <script>
-(function(){
-var SVG={
-  plane:'<path d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/>',
-  map:'<path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>',
-  palace:'<path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 9h1M14 9h1M9 13h1M14 13h1"/>',
-  tree:'<path d="M12 2L5 14h14z"/><rect x="10" y="14" width="4" height="6"/>',
-  ski:'<circle cx="12" cy="5" r="2"/><path d="m6 14 1-3 4 2 3-5 3 6M3 20l4-2 4 1 3-2 4 1 3-2"/>',
-  fish:'<path d="M6 12c.645-2 2.25-4 6-4 4.5 0 6 2.667 6 4s-1.5 4-6 4c-3.75 0-5.355-2-6-4z"/><path d="M1 12c.667-2 3.5-4 5-4M1 12c.667 2 3.5 4 5 4"/>',
-  star:'<polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>',
-  moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
-  fork:'<path d="M7 4v16"/><path d="M11 4v3a4 4 0 0 1-4 4"/><path d="M17 4a1 1 0 0 0-1 1v5h2V5a1 1 0 0 0-1-1z"/><path d="M16 10v10"/>',
-  heart:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
-  tower:'<rect x="9" y="2" width="6" height="6"/><path d="M12 8v13M5 21h14M5 13l7-4 7 4"/>',
-  stream:'<path d="M2 12c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0M2 7c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>',
-  shop:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>',
-  camera:'<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>',
-  shop:'<path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/>',
-  stream:'<path d="M2 12c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0M2 7c1.5-2 3-2 4.5 0s3 2 4.5 0 3-2 4.5 0 3 2 4.5 0"/>',
-  check:'<polyline points="20 6 9 17 4 12"/>',
-  warn:'<path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/>',
-  bulb:'<line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/>',
-};
-function ico(k,s,c){s=s||44;c=c||'rgba(255,255,255,0.85)';return '<svg width="'+s+'" height="'+s+'" viewBox="0 0 24 24" fill="none" stroke="'+c+'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+SVG[k]+'</svg>';}
-function si(k){return '<svg style="flex-shrink:0;margin-top:1px" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">'+SVG[k]+'</svg>';}
-function chk(){return '<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';}
+var DAYS = [
+  // ── DAY 0: FEB 15 ──
+  { label:'Feb 15 — Arrival & First Night', date:'Feb 15', hlEmoji:'✈️', hlName:'Arrival', acts:[
+    { bg:'linear-gradient(145deg,#1C2331,#263238,#455A64)', emoji:'✈️', badge:'Day 1 · 2 AM', time:'2 AM',
+      title:'2 AM Arrival → Night Bus to Yeongdeungpo', sub:'Incheon International Airport (ICN)',
+      cap:'<strong>couple.korea2027</strong> Landing at 2 AM in Korea ✈️🌙 No AREX at this hour — Bus 6021 runs 24/7 directly to Yeongdeungpo. No transfers, just sleep on the bus.',
+      prices:[{l:'Bus 6021',v:'~₱600–680'}],
+      tip:'AREX and subway do NOT run at 2 AM. Take Airport Limousine Bus 6021 from Stop 5C or 12B — runs 24 hrs, no transfers, ~1–1.5 hrs to Yeongdeungpo.',
+      hl:['2 AM: land at ICN · head to Bus Stop 5C or 12B on arrivals level','Airport Limousine Bus 6021: ICN → Gimpo → Yeouido → Yeongdeungpo · 24 hrs','Journey: ~1–1.5 hrs · comfortable seats, drop right at Yeongdeungpo','Arrive ~3:30–4 AM · check in or drop bags · SLEEP IMMEDIATELY','Buy T-money card next morning at any convenience store · ₱100 deposit'],
+      tags:'#IncheonAirport #Seoul #KoreaArrival #BusToSeoul' },
+    { bg:'linear-gradient(160deg,#4A1A00,#6D2B00,#8D4E00)', emoji:'🛍️', badge:'Day 1 · Afternoon', time:'1 PM',
+      title:'Namdaemun Market + Myeongdong', sub:"Korea's oldest market · street food · K-beauty",
+      cap:"<strong>couple.korea2027</strong> Soft intro to Seoul 🥹 Namdaemun (est. 1414) then Myeongdong for all the street food and K-beauty you can handle.",
+      hl:["Namdaemun Market: Korea's oldest traditional market (est. 1414) — clothes, accessories, snacks","Kalguksu alley inside Namdaemun: knife-cut noodle soup — your first proper Korean meal 🍜",'Myeongdong (15-min walk): flagship shopping and street food district','K-beauty: Olive Young, Nature Republic, Etude House all in a row 💄','MUST TRY: hotteok (sweet pancake), tteokbokki, Korean corn dog with fries','Street food is best in the evening when all the stalls open'],
+      tip:"Namdaemun is 5 min walk from Seoul Station. Myeongdong is 15 min walk. Great soft first-day intro.",
+      tags:'#Namdaemun #Myeongdong #SeoulFood #Kbeauty' },
+    { bg:'linear-gradient(145deg,#0D2060,#1A237E,#283593)', emoji:'🏮', badge:'Day 1 · Evening', time:'5 PM',
+      title:'Cheonggyecheon Stream + DDP Light Show', sub:'Urban stream · Zaha Hadid · Dongdaemun Night',
+      cap:'<strong>couple.korea2027</strong> Cheonggyecheon at night: lanterns reflecting off the water 🏮 Walk the full stream to DDP as the sun sets — the building glows white against the dark sky.',
+      hl:['Cheonggyecheon Stream: 11km restored urban stream below street level — peaceful and romantic','Walk from Gwanggyo Bridge along the stream, stone bridges and stepping stones','Lanterns light up at dusk — reflection on water is one of Seoul top views ✨','DDP (Dongdaemun Design Plaza): Zaha Hadid massive futuristic building — jaw-dropping','DDP glows white at night — free to walk around and photograph','Dongdaemun Night Market starts at 9 PM right next to DDP — 24hr shopping'],
+      tip:"Most beautiful after dark when lanterns reflect off the water. Walk the full length ending at DDP as the sun sets.",
+      tags:'#Cheonggyecheon #DDP #DongdaemunMarket #SeoulAtNight' },
+    { bg:'linear-gradient(145deg,#4A0020,#880E4F,#AD1457)', emoji:'🌙', badge:'Day 1 · Night', time:'8 PM',
+      title:'Hongdae Couple Cafe + Night Scene', sub:'Cafe Bora · rooftop cafes · live busking 🎵',
+      cap:'<strong>couple.korea2027</strong> Hongdae = best date-night neighborhood in Seoul 💕 Cafe Bora purple latte, rooftop cafes with city views, live busking. Early sleep though — ski resort tomorrow!',
+      hl:['Hongdae: Seoul best couple cafe and nightlife district near Hongik University','Cafe Bora: iconic purple matcha latte — the Hongdae couple photo spot 💜','Rooftop cafes with Seoul city views on almost every block','Live busking every night on the main street — find a spot and watch 🎸','Early sleep after this — ski resort means 7 AM train tomorrow!'],
+      tip:"Subway from Dongdaemun to Hongdae ~25 min. Rooftop cafes, live busking, great bars, all within walking distance.",
+      tags:'#Hongdae #CafeBora #SeoulDateNight #CoupleGoals' },
+  ]},
 
-var ACTS=[
+  // ── DAY 1: FEB 16 ──
+  { label:'Feb 16 — Ski Day at Elysian Gangchon', date:'Feb 16', hlEmoji:'🎿', hlName:'Ski Day', acts:[
+    { bg:'linear-gradient(145deg,#0D47A1,#1565C0,#1976D2)', emoji:'🎿', badge:'Day 2 · All Day', time:'8 AM – 5 PM',
+      title:'Ski Day — Elysian Gangchon Resort', sub:'Freshest snow! · 10 slopes · 1 hr by ITX train 🚂',
+      cap:'<strong>couple.korea2027</strong> Day 2 = freshest snow! 🏔️❄️ Best beginner resort reachable by train. Chairlift together with the snowy valley below = best couple moment of the trip.',
+      prices:[{l:'Lift ticket',v:'₱1,200–3,080'},{l:'Ski + boot rental',v:'₱1,200'},{l:'Snow suit rental',v:'₱800–1,400'},{l:'Full day package',v:'~₱3,600–4,400'}],
+      tip:'Line 1 direct to Cheongnyangni (35 min, no transfer!) then ITX to Gangchon (1 hr). Total hotel → resort: ~1 hr 40 min. Head back by 5 PM.',
+      hl:['Line 1 → Cheongnyangni (35 min no transfer) → ITX → Gangchon Station (1 hr)','Total travel: ~1 hr 40 min each way from hotel to slopes','Elysian Gangchon: 10 slopes, 8 beginner/intermediate — best first-timer resort by train','600m beginner slope: wide and gentle — perfect even if you have NEVER skied','Everything rentable on-site: skis, boots, poles, helmet, gloves, full snow suit 🎿','Morning: ski school lesson · Afternoon: slope runs on your own','Chairlift ride together with entire snowy valley below = best couple moment ❤️','Snow sledding hill (₱600): fun for breaks from skiing','Head back by 5 PM · still time for dinner in Seoul!'],
+      tags:'#ElysianGangchon #SkiKorea #SnowDay #GangwonDo' },
+    { bg:'linear-gradient(145deg,#4A0020,#880E4F,#C2185B)', emoji:'🍺', badge:'Day 2 · Evening', time:'7 PM',
+      title:'Post-Ski Evening (Optional)', sub:'Myeongdong · Itaewon · or GS25 ramyeon at the hotel 😂',
+      cap:"<strong>couple.korea2027</strong> You'll probably be destroyed 😂 If you have energy: Myeongdong or Itaewon. Otherwise: GS25 convenience store ramyeon + chimaek at the hotel. Very Korean, very valid.",
+      hl:['Option A — Myeongdong: closest, street food dinner, window shopping','Option B — Itaewon: relaxed sit-down dinner, international food, casual bars 🍷','Option C — Just rest: delivery, K-dramas, recharge for Day 3 🛋️','GS25 or CU ramyeon and chimaek (chicken + beer) at the hotel = full Korean experience'],
+      tip:"You'll be tired after a full ski day. Rest is totally valid — Day 3 (Nami Island + Rail Bike + Petite France) is a big day!",
+      tags:'#PostSki #SeoulNight #KoreanConvenience #Chimaek' },
+  ]},
 
-  // DAY 0
-  {day:0,bg:'#263238',ic:'plane',label:'Incheon International Airport (ICN)',time:'2 AM',
-   name:'2 AM Arrival at ICN - Night Bus to Yeongdeungpo',
-   tip:'AREX and subway do NOT run at 2 AM. Take the Airport Limousine Bus 6021 directly to Yeongdeungpo - it runs 24 hours and drops off RIGHT in Yeongdeungpo/Yeouido area. No transfers, no taxi needed. About 1-1.5 hrs.',
-   hl:['2 AM: land at ICN · grab bags · head to Bus Stop 5C or 12B on the arrivals level',
-       'Airport Limousine Bus 6021: ICN → Gimpo Airport → Yeouido → Yeongdeungpo · runs 24 hrs · P600-P680',
-       'Journey: about 1-1.5 hrs depending on late-night traffic · seats are comfortable',
-       'Arrive Yeongdeungpo around 3:30-4 AM · check in or drop bags · SLEEP IMMEDIATELY',
-       'Buy T-money card next morning at any convenience store near the hotel (P100 deposit)',
-       'Nap until noon minimum - ski resort tomorrow means energy is everything!',
-       'Yeouido Hangang Park is a 10-min walk from the hotel - noted for Day 4 Han River night!']},
-  {day:0,bg:'#6D2B00',ic:'shop',label:'Namdaemun Market, Myeongdong',time:'1 PM',
-   name:'Namdaemun Market + Myeongdong Afternoon',
-   tip:"Soft intro to Seoul. Namdaemun is 5 min walk from Seoul Station. Then Myeongdong is 15 min walk for the full street food experience before dinner.",
-   hl:["Namdaemun Market: Korea's oldest traditional market (est. 1414) - first look around",
-       'Namdaemun: clothes, accessories, Korean snacks, everything cheap and authentic',
-       "Kalguksu alley inside Namdaemun: knife-cut noodle soup for your first proper Korean meal",
-       'Walk to Myeongdong (15 min): Seoul flagship shopping and street food district',
-       "Myeongdong K-beauty: Olive Young, Nature Republic, Etude House all in a row",
-       'MUST TRY: hotteok (sweet pancake), tteokbokki, Korean corn dog with fries',
-       'Myeongdong street food is best in the evening when all the stalls open']},
-  {day:0,bg:'#1A237E',ic:'stream',label:'Cheonggyecheon Stream, DDP, Dongdaemun',time:'5 PM',
-   name:'Cheonggyecheon Stream + DDP Light Show',
-   tip:"Cheonggyecheon is beautiful at golden hour and magical once the lanterns light up. DDP is right at the end of the stream - walk the whole length then arrive at the glowing building as the sun sets.",
-   hl:['Cheonggyecheon Stream: 11km restored urban stream below street level, peaceful and beautiful',
-       'Walk from Gwanggyo Bridge westward along the stream, stone bridges and stepping stones',
-       'Lanterns light up at dusk - the reflection on the water at night is one of Seoul top views',
-       "DDP (Dongdaemun Design Plaza): Zaha Hadid's massive futuristic curved building - jaw-dropping",
-       'DDP glows white against the dark sky - free to walk around and photograph',
-       'Dongdaemun Night Market starts at 9 PM right next to DDP - massive 24-hr shopping']},
-  {day:0,bg:'#880E4F',ic:'moon',label:'Hongdae Night',time:'8 PM',
-   name:'Hongdae Couple Cafe + Night Scene',
-   tip:"Subway from Dongdaemun to Hongdae takes about 25 min. Hongdae is the best date-night neighborhood in Seoul - rooftop cafes, live busking, great bars, all within walking distance.",
-   hl:['Hongdae: Seoul best couple cafe and nightlife district near Hongik University',
-       'Cafe Bora: iconic purple matcha latte - the Hongdae couple photo spot',
-       'Rooftop cafes with Seoul city views are on almost every block',
-       'Live busking every night on the main street - find a spot and watch',
-       'Early sleep after this - ski resort means 7 AM train tomorrow!']},
+  // ── DAY 2: FEB 17 ──
+  { label:'Feb 17 — Nami Island + Gapyeong Day Trip', date:'Feb 17', hlEmoji:'🌲', hlName:'Nami Is.', acts:[
+    { bg:'linear-gradient(145deg,#0A3D0A,#1B5E20,#2E7D32)', emoji:'🌲', badge:'Day 3 · Morning', time:'8 AM',
+      title:'Nami Island — Winter Sonata Island', sub:'Snow-covered metasequoia lanes · THE iconic Korean couple spot',
+      cap:'<strong>couple.korea2027</strong> Nami Island in February = snow-covered metasequoia tree tunnel 😭❄️ THE iconic Korean couple destination. Winter Sonata was filmed here. This is literally THAT view.',
+      prices:[{l:'Entry + ferry',v:'₱640–760'},{l:'Couple bike rental',v:'₱600–800'},{l:'ITX roundtrip',v:'₱456'}],
+      tip:'From Yeongdeungpo: Line 1 → Cheongnyangni (35 min, no transfer!) → ITX → Gapyeong (39 min). Leave by 7 AM to arrive at Nami by 9 AM.',
+      hl:['Nami Island: filming location of Winter Sonata (2002) — THE iconic Korean couple destination 💑','February: snow-covered metasequoia tree lanes — most iconic romantic winter view in Korea','Metasequoia Lane: towering trees forming a perfect snow-canopy tunnel, completely silent 🌲','Winter Sonata couple statue: the bronze couple — obligatory couple photo','The filming bench: exact spot of the most iconic drama scenes','Tandem couple bike rental: ride the 5km island loop together 🚲','Island operates as a micronation — you get an immigration stamp entering!'],
+      tags:'#NamiIsland #WinterSonata #Gapyeong #CoupleKorea' },
+    { bg:'linear-gradient(145deg,#004D40,#006064,#00796B)', emoji:'🚲', badge:'Day 3 · Afternoon', time:'1 PM',
+      title:'Gapyeong Rail Bike — Riverside Cycle', sub:'Old railway track · Bukhan River · LED tunnel light show',
+      cap:'<strong>couple.korea2027</strong> Pedal-powered cart on an old railway track beside the Bukhan River 🚲 Tunnels with LED light shows, mountain backdrop, river views. So much fun.',
+      prices:[{l:'Rail bike couple cart',v:'₱880–1,400'}],
+      tip:'Book online in advance — slots fill up fast on weekends. Ends at a different station so factor in taxi/shuttle back.',
+      hl:['Pedal-powered cart on old Gyeonggang railway track beside Bukhan River','Route: riverside views, mountain backdrop, old railway tunnels with LED light shows inside 🌈','3.6km route along the river, ~45 min, gentle and easy for everyone','Very popular couple activity — book at least 2 days in advance on weekends!'],
+      tags:'#GapyeongRailBike #BukhanRiver #CoupleActivity #KoreaDayTrip' },
+    { bg:'linear-gradient(145deg,#2A0060,#4A148C,#6A1B9A)', emoji:'🏡', badge:'Day 3 · Late Afternoon', time:'2:30 PM',
+      title:'Petite France + Garden of Morning Calm', sub:'French village · winter lighting festival at dusk 🌟',
+      cap:'<strong>couple.korea2027</strong> Petite France: colorful French village on a hillside above a frozen lake 🇫🇷 Then Garden of Morning Calm lights up at dusk with thousands of lights 🌟',
+      prices:[{l:'Petite France',v:'₱480'},{l:'Garden of Morning Calm',v:'₱440'},{l:'Taxi between spots',v:'₱200–320'}],
+      tip:"Arrive at Garden of Morning Calm by 4 PM to catch golden hour before the lights switch on at sunset.",
+      hl:['Petite France: colorful French-themed village on a hillside above Cheongpyeong Lake','Famous filming location: Running Man, You Who Came From the Stars 📺','Little Prince exhibits, rainbow stairways, panoramic frozen lake views + hot chocolate ☕','Garden of Morning Calm: Korea most stunning botanical garden in winter','Winter Lighting Festival at dusk: thousands of lights transform the entire garden 🌟','Arrive by 4 PM for golden hour, stay for the light show which begins at sunset','Return: taxi → Gapyeong Station → ITX → Seoul (~39 min) → arrive ~7:30 PM'],
+      tags:'#PetiteFrance #GardenOfMorningCalm #GapyeongKorea #WinterLights' },
+    { bg:'linear-gradient(145deg,#8B0000,#C62828,#D32F2F)', emoji:'🍖', badge:'Day 3 · Night', time:'8 PM',
+      title:'Sinchon + Hongdae Dinner Night', sub:'Galmaegi-sal · dakgalbi · makgeolli at pojangmacha 🍶',
+      cap:'<strong>couple.korea2027</strong> Sinchon = local, affordable version of Hongdae right next door 🍺 Best galmaegi-sal, dakgalbi, and soju at a pojangmacha street tent bar.',
+      hl:['Sinchon: lively university area next to Hongdae, more local and affordable','Best dinner: galmaegi-sal (pork skirt steak) or dakgalbi (spicy stir-fried chicken) 🥩','Soju or makgeolli at a pojangmacha street tent bar — very Korean experience 🍶','Walk 10 min to Hongdae for dessert cafe or nightcap'],
+      tags:'#Sinchon #Hongdae #KoreanBBQ #Galmaegi #Makgeolli' },
+  ]},
 
-  // DAY 1
-  {day:1,bg:'#0D47A1',ic:'ski',label:'Elysian Gangchon Ski Resort, Gangwon-do',time:'8 AM - 5 PM',
-   name:'Ski Day - Elysian Gangchon Resort',
-   badges:[{c:'bk-bl',t:'Day 2 = freshest snow!'},{c:'bk-w',t:'1hr by ITX train'}],
-   price:[{l:'lift ticket',v:'P1,200-P3,080'},{l:'ski + boot rental',v:'P1,200'},{l:'snow suit rental',v:'P800-P1,400'},{l:'full day package',v:'~P3,600-P4,400'}],
-   tip:"From Yeongdeungpo, take Line 1 direct to Cheongnyangni Station (35 min, no transfer!) then ITX-Cheongchun to Gangchon Station (1 hr). Total from hotel to resort: about 1 hr 40 min. Head back by 5 PM - Line 1 direct from Seoul Station back to Yeongdeungpo!",
-   hl:['From Yeongdeungpo: Line 1 direct to Cheongnyangni (35 min, no transfer!) then ITX to Gangchon (1 hr)',
-       'Total travel time from hotel to ski resort: about 1 hr 40 min each way',
-       'Elysian Gangchon: 10 slopes, 8 beginner/intermediate - best first-timer resort by train',
-       '600m beginner slope is wide and gentle - perfect even if you have never skied before',
-       'Everything rentable on-site: skis, boots, poles, helmet, gloves, full snow suit',
-       'Morning: ski school lesson, afternoon: slope runs on your own',
-       'Snow sledding hill (P600): fun for breaks from skiing',
-       'Midday break: resort restaurant, sauna warm-up, arcade',
-       'Head back by 5 PM to catch the ITX back - still time for dinner in Seoul!',
-       'Chairlift ride together up the mountain with the entire snowy valley below = best couple moment',
-       'Return: ITX from Gangchon Station back to Seoul around 6-7 PM']},
+  // ── DAY 3: FEB 18 ──
+  { label:'Feb 18 — ALL 4 Palaces + Neighborhoods', date:'Feb 18', hlEmoji:'🏯', hlName:'Palaces', acts:[
+    { bg:'linear-gradient(145deg,#2D1A00,#4E342E,#5D4037)', emoji:'🏯', badge:'Day 4 · Morning', time:'9 AM',
+      title:'Gyeongbokgung + Couple Hanbok + Bukchon Hanok', sub:'Joseon 1395 · hanbok · Changing of the Guard 10:30 AM',
+      cap:'<strong>couple.korea2027</strong> Couple hanbok at Gyeongbokgung 👘 FREE palace entry with hanbok. 10:30 AM Changing of the Guard in full Joseon uniforms. Most iconic couple photo in all of Seoul.',
+      prices:[{l:'Entrance',v:'₱120'},{l:'Couple hanbok rental',v:'₱1,600–2,000'},{l:'Hanbok = FREE entry',v:''}],
+      tip:'Arrive 9 AM, rent hanbok immediately from shops outside the gate. Be inside and at the main gate by 10:15 AM for the 10:30 AM Changing of the Guard.',
+      hl:['Gyeongbokgung: largest Grand Palace in Seoul, built 1395, most iconic palace in Korea 🏯','Couple hanbok photos here = the most iconic thing to do in Seoul — DO NOT SKIP 👘','Changing of the Royal Guard: 10:30 AM, full Joseon uniforms, weapons, and music 🎺','Gyeonghoeru Pavilion: lotus pond — single best couple photo backdrop in Seoul ❤️','If it snows: palace in white is one of the most iconic images in all of Korea ❄️','Bukchon Hanok Village: 10-min walk east, 600-year-old hanok rooftop maze','Gyedong-gil Alley: THE famous viewpoint — walk it still in hanbok for the best photos'],
+      tags:'#Gyeongbokgung #Hanbok #CoupleHanbok #BukchonHanokVillage' },
+    { bg:'linear-gradient(145deg,#4A0020,#880E4F,#C2185B)', emoji:'🏮', badge:'Day 4 · Midday', time:'12 PM',
+      title:'Ikseon-dong + Insadong + Jogyesa Temple', sub:"Seoul's 1930s alley district · traditional tea · Buddhist temple",
+      cap:"<strong>couple.korea2027</strong> Ikseon-dong = Seoul's trendiest preserved 1930s neighborhood 📸 Tiny winding alleys, hip cafes, every corner is a photo. Then Jogyesa Temple for peace.",
+      prices:[{l:'Lunch',v:'₱480–720'},{l:'Temple entry',v:'FREE'}],
+      hl:["Ikseon-dong: Seoul trendiest preserved 1930s-era neighborhood, tiny winding alleys",'Hip cafes, vintage boutiques, Korean fusion snacks — every corner is a photo 📷','Try: traditional Korean sweets, sikhye rice punch, hotteok 🥮','Insadong: cultural street with antique shops, traditional tea houses, hanji crafts',"Jogyesa Temple: Seoul most important Buddhist temple — incredibly peaceful and FREE",'Stunning with snow or lanterns in winter, open all day'],
+      tags:'#IkseonDong #Insadong #Jogyesa #SeoulStreets' },
+    { bg:'linear-gradient(145deg,#1A2E0A,#2E4A1A,#33691E)', emoji:'🌿', badge:'Day 4 · Afternoon', time:'1:30 PM',
+      title:'Changdeokgung Palace + Secret Garden', sub:'UNESCO 1997 · guided Secret Garden · frozen lotus ponds ❄️',
+      cap:'<strong>couple.korea2027</strong> UNESCO World Heritage + Secret Garden 🌿 Frozen lotus ponds + 300-year-old pavilions in winter. ONLY 50 people per tour — book in advance!',
+      prices:[{l:'Palace',v:'₱120'},{l:'Secret Garden guided tour',v:'₱200'},{l:'Total',v:'₱320'}],
+      tip:'Book Secret Garden tickets ONLINE at Korea Heritage Service website. Tour runs every hour, ~90 min. The frozen ponds and ancient pavilions in winter are breathtaking.',
+      hl:['Changdeokgung: UNESCO World Heritage, best-preserved Joseon palace, royal residence for 300+ years','Secret Garden: hidden royal forest, guided tour only, max 50 people per group','February: bare trees + frozen lotus ponds + snow-dusted pavilions = most beautiful in winter 🥹','The 300-year-old pagoda tree: one of Korea most photographed natural landmarks 🌳'],
+      warn:'Book Secret Garden tickets ONLINE in advance — sells out on weekends!',
+      tags:'#Changdeokgung #SecretGarden #UNESCO #SeoulPalace' },
+    { bg:'linear-gradient(145deg,#6D1500,#BF360C,#D84315)', emoji:'🏛️', badge:'Day 4 · Late Afternoon', time:'3:30 PM',
+      title:'Gyeonghuigung + Deoksugung + Stonewall Walkway', sub:'Free palace · most romantic dusk walk in Seoul 💕',
+      cap:"<strong>couple.korea2027</strong> Gyeonghuigung is FREE and basically empty — feels like a private palace 👑 Then Deoksugung Stonewall Walkway at dusk: one of Seoul's most romantic walks.",
+      prices:[{l:'Gyeonghuigung',v:'FREE'},{l:'Deoksugung',v:'₱40'}],
+      hl:['Gyeonghuigung: completely free, almost zero tourists — feels like a private palace ✨','Deoksugung: the only palace surrounded by modern skyscrapers — surreal contrast','Deoksugung Stonewall Walkway: famous romantic winter walk around the palace walls 💕','Bare winter trees lining both sides, couples everywhere at dusk','All 4 palaces DONE by 5:30 PM! 🏆'],
+      tags:'#Gyeonghuigung #Deoksugung #StonewallWalkway #FourPalaces' },
+    { bg:'linear-gradient(145deg,#003344,#006064,#00838F)', emoji:'🏮', badge:'Day 4 · Night', time:'6 PM',
+      title:'Cheonggyecheon Night Walk + Dongdaemun', sub:'Lanterns on water · glowing DDP · 24-hr night market',
+      cap:'<strong>couple.korea2027</strong> Cheonggyecheon at night with lanterns reflecting on the water 🏮 Walk the full stream to the glowing DDP. Dongdaemun Night Market runs until dawn.',
+      prices:[{l:'Cheonggyecheon',v:'FREE'},{l:'DDP exterior',v:'FREE'},{l:'Dinner',v:'₱600–1,200'}],
+      hl:['Cheonggyecheon Stream at night: lanterns reflect on the water — one of Seoul best views 🏮','Walk the stone path from City Hall end all the way to DDP (~40 min)','DDP: glowing white at night — free to explore outside 🌃','Dongdaemun Night Market: 24-hr fashion district, opens 9 PM','Dinner: Korean BBQ, dakgalbi, seafood hotpot in the Dongdaemun food alleys'],
+      tags:'#Cheonggyecheon #DDP #DongdaemunNight #SeoulAtNight' },
+  ]},
 
-  {day:1,bg:'#880E4F',ic:'fork',label:'Myeongdong or Itaewon Evening',time:'7 PM (optional)',
-   name:'Post-Ski Evening in Seoul (Optional)',
-   badges:[{c:'bk-am',t:'optional - rest if tired!'}],
-   tip:"You'll be tired after a full ski day but you're back in Seoul by 6-7 PM. If you have energy, these are easy, relaxed options close to the subway.",
-   hl:['Option A - Myeongdong: closest to most hotels, street food dinner, window shopping',
-       'Option B - Itaewon: more relaxed sit-down dinner, international food, casual bars',
-       'Option C - Just rest: order delivery to the hotel, watch K-dramas, recharge for Day 3',
-       'Hot tip: GS25 or CU convenience store ramyeon and chimaek (chicken + beer) at the hotel is very Korean and very valid after a ski day']},
+  // ── DAY 4: FEB 19 ──
+  { label:"Feb 19 — Eobi Ice Valley + Gapyeong", date:'Feb 19', hlEmoji:'❄️', hlName:'Eobi', acts:[
+    { bg:'linear-gradient(145deg,#00254D,#003366,#004D80)', emoji:'❄️', badge:'Day 5 · Morning', time:'9 AM',
+      title:'Eobi Ice Valley — Frozen Waterfall Canyon', sub:'Blue ice walls up to 10m tall · feels like another planet',
+      cap:'<strong>couple.korea2027</strong> A natural valley where waterfalls freeze completely solid in February ❄️ Walls of natural blue ice up to 10 meters tall. No crowds. No tour groups. Just you two and the ice.',
+      prices:[{l:'Valley entry',v:'₱200'},{l:'ITX roundtrip',v:'₱456'},{l:'Taxi from station',v:'₱400'}],
+      tip:'ITX-Cheongchun to Gapyeong (same train as Nami Island), then taxi to Eobi Ice Valley (~20 min). February = peak season, ice formations at their absolute thickest.',
+      hl:['Eobi Ice Valley: natural valley where waterfalls freeze completely in winter ❄️','Massive walls of natural blue ice, frozen waterfalls up to 10 meters tall','Walk along the frozen valley floor between towering ice walls — feels like another planet 🌍','Completely natural and wild — no crowds, no tour groups','February = peak season: ice formations at their absolute thickest','Done by 11:30 AM then Strawberry Farm 🍓'],
+      tags:'#EobiIceValley #FrozenWaterfall #GapyeongWinter #IceKorea' },
+    { bg:'linear-gradient(145deg,#8B0000,#C62828,#E53935)', emoji:'🍓', badge:'Day 5 · Noon', time:'12 PM',
+      title:'Gapyeong Strawberry Picking + Farm Lunch', sub:'Peak season · eat-all-you-pick · Korea best strawberries',
+      cap:'<strong>couple.korea2027</strong> Gapyeong February = peak strawberry season 🍓 Pick your own inside heated greenhouses — fat, deep red, impossibly sweet. Flat fee to eat everything you pick.',
+      prices:[{l:'Pick-your-own (all you can eat)',v:'₱480–600/person'}],
+      tip:'The berries in winter are fat, deep red, and incredibly sweet. Book ahead or arrive early — farms fill up by noon.',
+      hl:['Gapyeong: Korea most famous strawberry region — February = PEAK season 🍓','Pick-your-own inside heated greenhouses: rows of hanging strawberry plants at waist height','Fat, deep red, incredibly sweet — the absolute best strawberries in Korea','Flat fee, eat everything you can pick in 30–45 min 😋','Very popular couple date — book ahead, farms fill up fast!','Buy extra to take back: fresh Gapyeong strawberries = best pasalubong 🎁'],
+      tags:'#GapyeongStrawberry #PickYourOwn #KoreaFarm #StrawberrySeason' },
+    { bg:'linear-gradient(145deg,#0A2E0A,#1B5E20,#388E3C)', emoji:'🦙', badge:'Day 5 · Afternoon', time:'1:30 PM',
+      title:'Alpaca World — Feed and Pet Alpacas in the Snow', sub:'400+ animals · extra fluffy in winter · snow + animals 🌨️',
+      cap:"<strong>couple.korea2027</strong> 400+ animals on a snow-covered hillside 🦙❄️ The alpacas in winter are RIDICULOUSLY fluffy. They walk right up to you for pellets. Snow + animals = the cutest thing.",
+      prices:[{l:'Entrance',v:'₱600'},{l:'Animal feed',v:'₱80–160'},{l:'Taxi from farm',v:'₱400'}],
+      tip:'Book timed entry tickets online in advance. Winter is the BEST time — animals are extra fluffy and the farm looks stunning in snow.',
+      hl:['Alpaca World: Korea most famous alpaca farm, 400+ animals on a large hillside estate','Alpacas, deer, horses, rabbits, foxes, ostriches, meerkats — far more than just alpacas!','Hand-feed alpacas from a cup of pellets — they walk right up to you 🦙','Ridiculously fluffy in winter — extremely photogenic couple activity ❤️','Deer feeding section in snow = most photogenic spot in the whole park 🦌','Done by 4 PM then return to Seoul, arrive ~6 PM'],
+      warn:'Book timed entry tickets ONLINE in advance — sells out on weekends!',
+      tags:'#AlpacaWorld #GapyeongAlpaca #KoreaAnimals #CuteAnimals' },
+    { bg:'linear-gradient(145deg,#263238,#37474F,#455A64)', emoji:'🍜', badge:'Day 5 · Evening', time:'7 PM',
+      title:'Itaewon Dinner — International Food District', sub:'Gyeongridan-gil · Haebangchon · anything you want 🌎',
+      cap:"<strong>couple.korea2027</strong> After a full day in Gapyeong, a relaxed international dinner in Itaewon is perfect 🌎 Gyeongridan-gil up the hill has the best boutique restaurants.",
+      hl:["Itaewon: Seoul most internationally diverse food neighborhood",'Gyeongridan-gil: boutique restaurants and bars up the hill behind Itaewon Station 🍷','Haebangchon (HBC): charming neighborhood above Itaewon, more relaxed and local','Hundreds of options: Mexican, Italian, Indian, Thai, Lebanese, Turkish — anything you want','Perfect relaxed final evening before the last full Seoul day 🌃'],
+      tip:"Gyeongridan-gil is the hill behind the main Itaewon station strip — worth the walk up.",
+      tags:'#Itaewon #GyeongnidanGil #SeoulDinner #Haebangchon' },
+  ]},
 
-  // DAY 2
-  {day:2,bg:'#1B5E20',ic:'tree',label:'Nami Island, Gapyeong',time:'8 AM',
-   name:'Nami Island - Winter Sonata Island',
-   badges:[{c:'bk-pk',t:'Most romantic spot in Korea'}],
-   price:[{l:'entry + ferry',v:'P640-P760'},{l:'ITX roundtrip',v:'P456'},{l:'taxi to wharf',v:'P200'},{l:'couple bike',v:'P600-P800'}],
-   tip:"From Yeongdeungpo, take Line 1 direct to Cheongnyangni Station (35 min, no transfer!) then ITX to Gapyeong (39 min). Leave the hotel by 7 AM to arrive at Nami Island by 9 AM. Same Line 1 takes you to all Gapyeong day trips!",
-   hl:['Nami Island: filming location of Winter Sonata (2002) - THE iconic Korean couple destination',
-       'February: snow-covered metasequoia tree lanes - most iconic romantic winter view in Korea',
-       'Metasequoia Lane: towering trees forming a perfect snow-canopy tunnel, completely silent',
-       'Winter Sonata couple statue: the bronze couple - obligatory couple photo',
-       'The filming bench: exact spot of the most iconic drama scenes - marked on the island map',
-       'Tandem couple bike rental (P600-P800): ride the 5km island loop together',
-       "Island operates as a micronation - you get an immigration stamp entering!",
-       'Done by 12:30 PM - head to Rail Bike']},
-  {day:2,bg:'#2E7D32',ic:'stream',label:'Gapyeong Rail Bike',time:'1 PM',
-   name:'Gapyeong Rail Bike - Riverside Cycle',
-   price:[{l:'rail bike couple cart',v:'P880-P1,400'},{l:'tunnel section',v:'included'}],
-   tip:"Gapyeong Rail Bike runs along an old railway track beside the river. You pedal a 4-seat rail cart through tunnels and over bridges with mountain and river views. Book online in advance - slots fill up fast on weekends.",
-   hl:['Gapyeong Rail Bike: pedal-powered cart on old Gyeonggang railway track beside Bukhan River',
-       'Route: riverside views, mountain backdrop, old railway tunnels with LED light shows inside',
-       '3.6km route along the river, about 45 min, gentle and easy',
-       'Very popular couple activity - book at least 2 days in advance on weekends',
-       'Ends at a different station - taxi or shuttle back to start']},
-  {day:2,bg:'#4A148C',ic:'star',label:'Petite France, Garden of Morning Calm',time:'2:30 PM',
-   name:'Petite France + Garden of Morning Calm',
-   price:[{l:'Petite France',v:'P480'},{l:'Garden of Morning Calm',v:'P440'},{l:'taxi between spots',v:'P200-P320'}],
-   tip:"Taxi from Rail Bike end point to Petite France (10 min). Then Garden of Morning Calm for the winter lighting show at dusk - arrive by 4 PM to catch golden hour before the lights switch on.",
-   hl:['Petite France: colorful French-themed village on a hillside above Cheongpyeong Lake',
-       'Famous filming location: Running Man, You Who Came From the Stars',
-       'Little Prince exhibits, rainbow stairways, panoramic frozen lake views, hot chocolate',
-       "Garden of Morning Calm: Korea's most stunning botanical garden in winter",
-       'Winter Lighting Festival at dusk: thousands of lights transform the entire garden',
-       'Arrive by 4 PM for golden hour, stay for the light show which begins at sunset',
-       'Return: taxi to Gapyeong Station, ITX back to Seoul (39 min), arrive Seoul around 7:30 PM']},
-  {day:2,bg:'#C62828',ic:'fork',label:'Sinchon, Hongdae Evening',time:'8 PM',
-   name:'Sinchon + Hongdae Dinner Night',
-   tip:"Sinchon is the more local, affordable version of Hongdae right next door. Great Korean BBQ and street food, much cheaper than tourist areas.",
-   hl:['Sinchon: lively university area next to Hongdae, more local and affordable',
-       'Best dinner: galmaegi-sal (pork skirt steak) or dakgalbi (spicy stir-fried chicken)',
-       'Soju or makgeolli at a pojangmacha street tent bar - very Korean experience',
-       'Walk 10 min to Hongdae for dessert cafe or night cap']},
+  // ── DAY 5: FEB 20 ──
+  { label:'Feb 20 — Packed Seoul City Day', date:'Feb 20', hlEmoji:'🏙️', hlName:'Seoul Day', acts:[
+    { bg:'linear-gradient(145deg,#2A0060,#4A148C,#6A1B9A)', emoji:'🥟', badge:'Day 6 · Morning', time:'9 AM',
+      title:"Gwangjang Market Morning", sub:"Est. 1905 · mayak kimbap · bindaetteok · yukhoe",
+      cap:"<strong>couple.korea2027</strong> Gwangjang = Seoul's oldest market (1905) and most authentic food experience in the city 🥟 Sit at a communal bench surrounded by elderly Koreans and eat until you can't.",
+      prices:[{l:'Food budget',v:'₱400–800'}],
+      tip:"Best in the morning before crowds. Row 2 is the iconic food stall section. Eat at LEAST 3 portions of mayak kimbap.",
+      hl:["Gwangjang Market: Seoul oldest market est. 1905, most authentic food experience 🥟",'MUST EAT: mayak kimbap (tiny addictive kimbap) — eat at least 3 portions 🥢','Also: bindaetteok (mung bean pancake), live yukhoe (beef tartare), japchae','Sit at any communal bench surrounded by elderly Koreans — totally immersive','Budget ₱400–800 and eat until you physically cannot continue 😂'],
+      tags:'#GwangjangMarket #Kimbap #Bindaetteok #SeoulFood #Authentic' },
+    { bg:'linear-gradient(145deg,#003333,#004D40,#00695C)', emoji:'☕', badge:'Day 6 · Late Morning', time:'11 AM',
+      title:"Seongsu-dong + Seoul Forest", sub:"Seoul's coolest creative district · converted factories · specialty coffee",
+      cap:"<strong>couple.korea2027</strong> Seongsu-dong: old industrial factories transformed into the coolest cafes and galleries in Seoul ☕ Every building is a world of its own. Seoul Forest right next door.",
+      prices:[{l:'Cafes',v:'₱200–500'},{l:'Seoul Forest',v:'FREE'}],
+      hl:['Seongsu-dong: converted factories turned into Seoul hippest creative district','Every building transformed: art galleries, leather workshops, specialty coffee shops 📷','Instagram-famous murals and graffiti alleys throughout every side street','Best specialty cafes: each individually themed, some with rooftops','Seoul Forest: 60-acre urban park right next to Seongsu 🌲','Deer park, sculpture garden, frozen streams — peaceful break between neighborhoods'],
+      tip:"Seongsu is on Line 2, across the Han River from central Seoul. Every single cafe has been individually transformed — spend time discovering them.",
+      tags:'#SeongsuDong #SeoulForest #SpecialtyCoffee #HipSeoul' },
+    { bg:'linear-gradient(145deg,#0D1A6E,#1A237E,#283593)', emoji:'📚', badge:'Day 6 · Afternoon', time:'2 PM',
+      title:'COEX Starfield Library + Bongeunsa Temple', sub:'Floor-to-ceiling bookshelves · 1,200-yr-old temple · both FREE',
+      cap:'<strong>couple.korea2027</strong> Starfield Library = most photogenic free space in Asia 📚 Towering bookshelves to the ceiling. Then Bongeunsa Temple across the street — ancient Buddhist temple vs. Gangnam skyline.',
+      prices:[{l:'Starfield Library',v:'FREE'},{l:'Bongeunsa Temple',v:'FREE'}],
+      hl:['COEX Starfield Library: floor-to-ceiling bookshelves — completely free, no ticket 📚','Looks like a sci-fi film set — most Instagrammable interior in Seoul','Sit, read, take photos — no time limit, very relaxed atmosphere','Bongeunsa Temple: 1,200-year-old Buddhist temple directly across from COEX','Bongeunsa in the evening: lanterns lit, monks chanting, ancient against skyscrapers 🕌','The contrast of old temple and modern Gangnam skyline is stunning','Both FREE — spend as long as you want'],
+      tags:'#COEXStarfield #Bongeunsa #Gangnam #SeoulFree #Bookshelves' },
+    { bg:'linear-gradient(145deg,#001040,#0D47A1,#1565C0)', emoji:'🌅', badge:'Day 6 · Golden Hour', time:'5:30 PM',
+      title:'Han River Sunset Ramen Picnic — Yeouido', sub:'10-min walk from hotel · cook ramen on the riverbank 🍜',
+      cap:'<strong>couple.korea2027</strong> Cook instant ramen from GS25 right on the Han River bank watching the Seoul sunset together 🍜🌅 Most genuinely romantic thing you can do in Seoul — and it costs ₱200.',
+      prices:[{l:'Han River entry',v:'FREE'},{l:'GS25 ramen + snacks',v:'₱200–400'}],
+      tip:'February sunset ~6:00–6:15 PM. Head out by 5:30 PM (10-min walk from hotel). CU and GS25 at Yeouido Hangang Park provide portable gas burners for ramen.',
+      hl:['Yeouido Hangang Park: 10-min WALK from the hotel — no taxi needed 🎉','Arrive by 5:30 PM for golden hour before the ~6:00 PM sunset','THE MOVE: buy instant ramen at CU/GS25 inside the park — they provide portable gas burners','Cook ramen right on the riverbank — hot noodles watching the Seoul sunset ❤️','Also grab: kimbap, hotteok, hot corn, banana milk, beer or hot canned coffee','After sunset: Seoul skyline and 63 Building light up across the river — stunning 🌃','Most genuinely romantic and local thing you can do in all of Seoul 💕'],
+      warn:"Do ALL shopping and pasalubong tonight after this — your flight departs 6:35 AM tomorrow!",
+      tags:'#HanRiver #Yeouido #SunsetSeoul #RamenDate #CoupleGoals' },
+  ]},
 
-  // DAY 3
-  {day:3,bg:'#4E342E',ic:'palace',label:'Gyeongbokgung Palace + Bukchon',time:'9 AM',
-   name:'Gyeongbokgung Palace + Couple Hanbok + Bukchon Hanok Village',
-   badges:[{c:'bk-bl',t:'Joseon 1395'},{c:'bk-pk',t:'Best couple photos in Seoul'}],
-   price:[{l:'entrance',v:'P120'},{l:'couple hanbok',v:'P1,600-P2,000'},{l:'hanbok = FREE entry',v:''}],
-   tip:"Arrive at 9 AM, rent couple hanbok immediately from shops right outside the gate, and get FREE palace entry with hanbok. Be inside and positioned at the main gate by 10:15 AM for the Changing of the Guard at 10:30 AM.",
-   hl:['Gyeongbokgung: largest of Seoul Grand Palaces, built 1395, most iconic palace in Korea',
-       'Couple hanbok photos here are the most iconic thing you can do in Seoul - do NOT skip',
-       'Changing of the Royal Guard: 10:30 AM, full Joseon uniforms, weapons, and music',
-       'Gyeonghoeru Pavilion: the lotus pond pavilion - single best couple photo backdrop in Seoul',
-       'If it snows: palace in white is one of the most iconic images in all of Korea',
-       'Bukchon Hanok Village: 10-min walk east, 600-year-old hanok rooftop maze',
-       'Gyedong-gil Alley: the famous viewpoint, walk it still in hanbok for the best photos',
-       'Done by 12 PM then Ikseon-dong for lunch']},
-  {day:3,bg:'#880E4F',ic:'map',label:'Ikseon-dong, Insadong, Jogyesa Temple',time:'12 PM',
-   name:'Ikseon-dong Alleys + Insadong + Jogyesa Temple',
-   price:[{l:'lunch',v:'P480-P720'},{l:'temple entry',v:'FREE'}],
-   tip:"Ikseon-dong is 5 min walk from Bukchon. After lunch, Insadong is 5 more minutes. Then Jogyesa Temple is just behind Insadong - beautiful, peaceful, and free.",
-   hl:["Ikseon-dong: Seoul's trendiest preserved 1930s-era neighborhood, tiny winding alleys",
-       'Hip cafes, vintage boutiques, Korean fusion snacks, every corner is a photo',
-       'Try: traditional Korean sweets, sikhye rice punch, hotteok',
-       'Insadong: cultural street with antique shops, traditional tea houses, hanji crafts',
-       "Jogyesa Temple: Seoul's most important Buddhist temple, incredibly peaceful and free",
-       'Jogyesa is stunning with snow or lanterns in winter, open all day',
-       'Done by 1:30 PM then Changdeokgung']},
-  {day:3,bg:'#2E4A1A',ic:'tree',label:'Changdeokgung Palace + Secret Garden',time:'1:30 PM',
-   name:'Changdeokgung Palace + Secret Garden',
-   badges:[{c:'bk-gn',t:'UNESCO 1997'},{c:'bk-pk',t:'Most romantic palace'}],
-   price:[{l:'palace',v:'P120'},{l:'Secret Garden',v:'P200'},{l:'total',v:'P320'}],
-   tip:"Book Secret Garden tickets online in advance at Korea Heritage Service website. Tour runs every hour, about 90 min. The frozen ponds and ancient pavilions in winter are breathtaking.",
-   hl:['Changdeokgung: UNESCO World Heritage, best-preserved Joseon palace, royal residence 300+ years',
-       'Secret Garden: hidden royal forest, guided tour only, max 50 people per group',
-       'February: bare trees + frozen lotus ponds + snow-dusted pavilions = most beautiful in winter',
-       'The 300-year-old pagoda tree: one of Korea most photographed natural landmarks',
-       'Done by about 3:30 PM then taxi to Gyeonghuigung (10 min)']},
-  {day:3,bg:'#BF360C',ic:'palace',label:'Gyeonghuigung + Deoksugung + Stonewall Walk',time:'3:30 PM',
-   name:'Gyeonghuigung + Deoksugung + Stonewall Walkway',
-   badges:[{c:'bk-gn',t:'Gyeonghuigung FREE'}],
-   price:[{l:'Gyeonghuigung',v:'FREE'},{l:'Deoksugung',v:'P40'}],
-   tip:"Both are quick visits - 30 min each. Gyeonghuigung first (almost always empty), then 15 min walk to Deoksugung. The Stonewall Walkway around Deoksugung at dusk is one of Seoul most romantic walks.",
-   hl:['Gyeonghuigung: completely free, almost zero tourists, feels like a private palace',
-       'Deoksugung: the only palace surrounded by modern skyscrapers - surreal contrast',
-       'Deoksugung Stonewall Walkway: famous romantic winter walk around the palace walls',
-       'Bare winter trees lining both sides of the stone path, couples everywhere at dusk',
-       'All 4 palaces done by 5:30 PM then Cheonggyecheon for the evening']},
-  {day:3,bg:'#006064',ic:'stream',label:'Cheonggyecheon + Dongdaemun Night',time:'6 PM',
-   name:'Cheonggyecheon Night Walk + Dongdaemun Night Market',
-   price:[{l:'Cheonggyecheon',v:'FREE'},{l:'DDP exterior',v:'FREE'},{l:'dinner',v:'P600-P1,200'}],
-   tip:"Cheonggyecheon is most beautiful after dark when the lanterns reflect off the water. Walk the full length then end at DDP. Dongdaemun Night Market is right there - 24-hr shopping open until dawn.",
-   hl:['Cheonggyecheon Stream at night: lanterns reflect on the water - one of Seoul best views',
-       'Walk the stone path from City Hall end all the way to DDP (about 40 min)',
-       'DDP: glowing white at night - free to explore outside',
-       'Dongdaemun Night Market: 24-hr fashion district, opens 9 PM, wholesale and retail everything',
-       'Dinner nearby: Korean BBQ, dakgalbi, seafood hotpot in the Dongdaemun food alleys']},
-
-  // DAY 4
-  {day:5,bg:'#4A148C',ic:'shop',label:'Gwangjang Market, Seoul',time:'9 AM',
-   name:'Gwangjang Market Morning',
-   price:[{l:'food budget',v:'P400-P800'}],
-   tip:"Gwangjang is best in the morning before crowds hit. Row 2 is the iconic food stall section - sit at a communal table surrounded by regulars and eat like a Seoulite.",
-   hl:["Gwangjang Market: Seoul oldest market est. 1905, most authentic food experience",
-       'MUST EAT: mayak kimbap (tiny addictive kimbap) - eat at least 3 portions',
-       'Also: bindaetteok (mung bean pancake), live yukhoe (beef tartare), japchae',
-       'Sit at any communal bench surrounded by elderly Koreans - totally immersive',
-       'Budget P400-P800 and eat until you physically cannot continue']},
-  {day:5,bg:'#004D40',ic:'camera',label:'Seongsu-dong, Seoul Forest',time:'11 AM',
-   name:"Seongsu-dong - Seoul's Coolest Neighborhood + Seoul Forest",
-   price:[{l:'cafes',v:'P200-P500'},{l:'Seoul Forest',v:'FREE'}],
-   tip:"Seongsu-dong is what happens when Seoul's creative class takes over old industrial factories. Every cafe is a world of its own. Seoul Forest right next door is a massive urban park.",
-   hl:['Seongsu-dong: converted factories turned into hip creative district',
-       'Every building transformed: art galleries, leather workshops, specialty coffee shops',
-       'Instagram-famous murals and graffiti alleys throughout every side street',
-       'Best specialty cafes: each one individually themed, some have rooftops',
-       'Seoul Forest: 60-acre urban park right next to Seongsu, great winter stroll',
-       'Seoul Forest: deer park, sculpture garden, frozen streams - peaceful break between areas']},
-  {day:5,bg:'#1A237E',ic:'tower',label:'COEX Starfield Library + Bongeunsa Temple',time:'2 PM',
-   name:'COEX Starfield Library + Bongeunsa Temple',
-   price:[{l:'Starfield Library',v:'FREE'},{l:'Bongeunsa Temple',v:'FREE'}],
-   tip:"Starfield Library is inside COEX Mall - one of the most photogenic free spaces in all of Asia. Towering bookshelves reaching the ceiling. Bongeunsa Temple is literally across the street - 1,200-year-old Buddhist temple surrounded by modern skyscrapers.",
-   hl:['COEX Starfield Library: floor-to-ceiling bookshelves, completely free, no ticket needed',
-       'Looks like a sci-fi film set - one of the most Instagrammable interiors in Seoul',
-       'Sit, read, take photos - no time limit, very relaxed atmosphere',
-       'COEX Mall underground: massive mall with food court, cinema, aquarium if you want more',
-       'Bongeunsa Temple (봉은사): 1,200-year-old Buddhist temple directly across from COEX',
-       'Bongeunsa in the evening: lanterns lit, monks chanting, ancient against the skyscrapers',
-       'The contrast of the old temple and modern Gangnam skyline is stunning',
-       'Both spots are FREE - spend as long as you want']},
-  {day:5,bg:'#006064',ic:'map',label:'Gangnam, COEX, Bongeunsa Temple',time:'5 PM',
-   name:'Gangnam + COEX Starfield Library + Bongeunsa Temple',
-   price:[{l:'COEX entry',v:'FREE'},{l:'Bongeunsa',v:'FREE'},{l:'dinner',v:'P600-P1,400'}],
-   tip:"COEX Starfield Library is one of the most beautiful free public spaces in Asia - towering bookshelves reaching the ceiling. Bongeunsa Temple across the street is an ancient Buddhist temple surrounded by skyscrapers.",
-   hl:['Gangnam: the wealthy modern district made famous by that song - worth seeing for the contrast',
-       'COEX Starfield Library: towering wall-to-wall bookshelves, completely free, stunning interior',
-       'One of the most photogenic spaces in Seoul - looks like a sci-fi film set',
-       'Bongeunsa Temple: 1,200-year-old Buddhist temple directly across from COEX',
-       'Bongeunsa in the evening: lanterns lit, monks chanting, ancient against the skyscrapers',
-       'Gangnam dining: wide range from affordable local spots to upscale Korean cuisine']},
-  {day:5,bg:'#1A0050',ic:'heart',label:'Han River Sunset Picnic, Yeouido',time:'5:30 PM',
-   name:'Han River Sunset Ramen Picnic - Yeouido',
-   badges:[{c:'bk-pk',t:'10-min walk from hotel!'},{c:'bk-am',t:'sunset ~6 PM Feb'}],
-   price:[{l:'Han River entry',v:'FREE'},{l:'CU/GS25 ramen + snacks',v:'P200-P400'}],
-   tip:'February sunset in Seoul is around 6:00-6:15 PM. Head out by 5:30 PM from the hotel (10-min walk) to catch the golden hour before sunset. CU and GS25 convenience stores at Yeouido Hangang Park have gas burners and instant ramen you cook right there - this is a full Korean experience.',
-   hl:['Yeouido Hangang Park: 10-min WALK from your Yeongdeungpo hotel - no taxi, no subway needed',
-       'Arrive by 5:30 PM to find a good spot on the lawn facing the river for golden hour',
-       'February sunset: 6:00-6:15 PM - the sky turns pink and orange over the Han River',
-       'THE MOVE: buy instant ramen at the CU or GS25 inside the park - they provide portable gas burners',
-       'Cook ramen right there on the riverbank - eat hot noodles watching the Seoul sunset together',
-       'Also grab: kimbap, hotteok, hot corn, banana milk, beer or hot canned coffee',
-       'After sunset: the Seoul skyline and 63 Building light up across the river - stunning',
-       'Banpo Bridge Rainbow Fountain: 15-min taxi away if you want to see the colored water jets at night',
-       'One of the most genuinely romantic and local things you can do in all of Seoul']},
-
-  // DAY 5 - OPTION D
-  {day:4,bg:'#006064',ic:'snow',label:'Eobi Ice Valley, Gapyeong',time:'9 AM',
-   name:'Eobi Ice Valley - Natural Frozen Waterfall Canyon',
-   badges:[{c:'bk-bl',t:'Gapyeong area, same ITX line as Nami Island'}],
-   price:[{l:'valley entry',v:'P200'},{l:'ITX roundtrip',v:'P456'},{l:'taxi from station',v:'P400'}],
-   tip:"ITX-Cheongchun to Gapyeong (same train as Nami Island), then taxi to Eobi Ice Valley (about 20 min, P400). Natural valley where mountain waterfalls freeze completely solid in February.",
-   hl:['Eobi Ice Valley: a natural valley where waterfalls freeze completely in winter',
-       'Massive walls of natural blue ice formations, frozen waterfalls up to 10 meters tall',
-       'Walk along the frozen valley floor between towering ice walls - feels like another planet',
-       'Completely natural and wild - no crowds, no tour groups',
-       'February is peak season when the ice formations are at their thickest',
-       'Done by 11:30 AM then Strawberry Farm']},
-  {day:4,bg:'#E65100',ic:'fork',label:'Gapyeong Strawberry Farm',time:'12 PM',
-   name:'Gapyeong Strawberry Picking + Farm Lunch',
-   price:[{l:'pick-your-own',v:'P480-P600/person'},{l:'eat what you pick',v:'included'}],
-   tip:"Gapyeong is famous throughout Korea for its strawberry farms. February is prime season - the cold weather makes the berries sweeter. You pick from the greenhouse and eat as you go.",
-   hl:['Gapyeong strawberry farms: Korea most famous strawberry region, February is peak season',
-       'Pick-your-own inside heated greenhouses: rows of hanging strawberry plants at waist height',
-       'The berries in winter are fat, deep red, and incredibly sweet - best in Korea',
-       'You pay a flat fee and eat everything you can pick during your session (30-45 min)',
-       'Very popular couple date activity - book ahead or arrive early, farms fill up by noon',
-       'Buy extra to take back: fresh Gapyeong strawberries are the best local pasalubong']},
-  {day:4,bg:'#2E7D32',ic:'tree',label:'Alpaca World, Gapyeong',time:'1:30 PM',
-   name:'Alpaca World - Feed and Pet Alpacas',
-   price:[{l:'entrance',v:'P600'},{l:'animal feed',v:'P80-P160'},{l:'taxi from farm',v:'P400'}],
-   tip:"Alpaca World is a 15-min taxi from the strawberry farms. Book timed entry tickets online in advance. Winter is the best time to visit because the animals are extra fluffy and the farm looks beautiful in snow.",
-   hl:['Alpaca World: Korea most famous alpaca farm, 400+ animals on a large hillside estate',
-       'Alpacas, deer, horses, rabbits, foxes, ostriches, meerkats - far more than just alpacas',
-       'Hand-feed the alpacas from a cup of pellets - they walk right up to you',
-       'The alpacas in winter are ridiculously fluffy - extremely photogenic couple activity',
-       'Walking paths through the snow with animals everywhere around you',
-       'The deer feeding section in snow is the most photogenic spot in the whole park',
-       'Book timed entry tickets online at Naver or Alpaca World official site',
-       'Done by 4 PM then return to Seoul, arrive around 6 PM']},
-  {day:4,bg:'#37474F',ic:'fork',label:'Itaewon, Seoul Evening',time:'7 PM',
-   name:'Itaewon Dinner - International Food District',
-   tip:"Itaewon is Seoul's international food district. After a full day in Gapyeong nature, a relaxed international dinner is perfect before the last full day.",
-   hl:['Itaewon: Seoul most internationally diverse food neighborhood',
-       'Hundreds of restaurants: Mexican, Italian, Indian, Thai, Lebanese, Turkish - anything you want',
-       'The hill behind Itaewon Station (Gyeongridan-gil): boutique restaurants and bars',
-       'Haebangchon (HBC): charming neighborhood just above Itaewon, more relaxed and local',
-       'Great final evening meal before the last full day in Seoul tomorrow']},
-
-  // DAY 6
-  {day:6,bg:'#C62828',ic:'warn',label:'6:35 AM Flight ICN to MNL',time:'~11:30 PM or 1 AM',
-   name:'EARLY DEPARTURE - Last Train OR 1 AM Night Bus to ICN',
-   badges:[{c:'bk-rd',t:'6:35 AM flight'},{c:'bk-am',t:'2 options!'}],
-   price:[{l:'Option A: last AREX train',v:'P248 total'},{l:'Option B: Bus 6021 at 1 AM',v:'P600-P680'}],
-   tip:"Two solid options to get to ICN for your 6:35 AM flight. Check-in opens around 4 AM so you need to be there by 4:00-4:30 AM at the latest. Both options depart from Yeongdeungpo area.",
-   warns:['Pack ALL bags on the night of Feb 20 - no time to pack on departure morning!'],
-   hl:['OPTION A - Last AREX Train (cheapest): Line 1 from Yeongdeungpo to Seoul Station (10 min, P52) then last AREX all-stop train departs Seoul Station ~11:32 PM, arrives ICN ~12:30 AM (P196) - sleep/rest at the airport until check-in opens at 4 AM',
-       'OPTION B - 1 AM Night Bus (most balanced): walk to Bus 6021 stop at Yeouido/Yeongdeungpo, departs 1 AM, arrives ICN ~2:30 AM (P600-P680) - short wait before check-in opens',
-       'ICN Airport is open 24hrs: rest zones, reclining chairs, 24hr CU/GS25 convenience stores, restaurants - comfortable to wait in either case',
-       'Check-in counter opens ~4 AM - queue early for smooth immigration',
-       'After check-in: duty-free run for last K-beauty, soju, Korean snacks',
-       'Board at 6 AM, depart 6:35 AM to Manila',
-       'Confirm terminal BEFORE leaving hotel: Terminal 2 (Korean Air, Delta) vs Terminal 1 (everyone else)',
-       'Annyeong Korea - until the next trip!']},
-
-  {day:6,bg:'#37474F',ic:'shop',label:'Feb 20 Evening - Pasalubong Run!',time:'Evening of Feb 20',
-   name:'Do ALL Shopping on Feb 20 Evening (Night Before)',
-   tip:"Since your Feb 21 flight is at 6:35 AM, do ALL pasalubong and shopping on the evening of Feb 20 after returning from Gapyeong. No time on departure morning!",
-   hl:['After Gapyeong (around 6 PM): head to Myeongdong or Yeongdeungpo for shopping',
-       'Times Square Mall at Yeongdeungpo Station: open until 10 PM, K-beauty and snacks',
-       'Olive Young Myeongdong: best prices on COSRX, Laneige, Innisfree, Numbuzin',
-       'Best pasalubong: Pepero boxes, honey butter chips, Choco Pie, Maxim coffee mix, gochujang',
-       'Also great: Korean sheet face masks, red ginseng candy, banana milk powder',
-       'Pack everything into checked bags tonight - liquids and food in checked baggage only!',
-       'Sleep early - alarm is at 2:30 AM!']},
+  // ── DAY 6: FEB 21 ──
+  { label:'Feb 21 — Pasalubong + 6:35 AM Flight', date:'Feb 21', hlEmoji:'🌙', hlName:'Bye 🇰🇷', acts:[
+    { bg:'linear-gradient(145deg,#263238,#37474F,#546E7A)', emoji:'🛍️', badge:'Feb 20 Evening · IMPORTANT', time:'After 6 PM',
+      title:'Do ALL Shopping on Feb 20 Evening (Night Before)', sub:'Times Square · Olive Young · pack tonight!',
+      cap:"<strong>couple.korea2027</strong> Since your flight is 6:35 AM, do ALL pasalubong shopping on Feb 20 evening after Han River 🛍️ No time on departure morning. Pack bags TONIGHT.",
+      tip:'After Han River (~7 PM): head to Myeongdong or Yeongdeungpo. Times Square at Yeongdeungpo Station is open until 10 PM.',
+      hl:['Times Square Mall at Yeongdeungpo Station: open until 10 PM · K-beauty + snacks 🛍️','Olive Young Myeongdong: best prices on COSRX, Laneige, Innisfree, Numbuzin 💄','Best pasalubong: Pepero, honey butter chips, Choco Pie, Maxim coffee mix, gochujang 🌶️','Also great: Korean sheet face masks, red ginseng candy, banana milk powder','Pack everything into checked bags TONIGHT — liquids and food in checked baggage only!','Sleep early — alarm is at 2:30 AM! 😱'],
+      warn:'Pack ALL bags on the night of Feb 20 — NO time to pack on departure morning!',
+      tags:'#KoreaPasalubong #OliveYoung #KoreanSnacks #SeoulShopping' },
+    { bg:'linear-gradient(145deg,#8B0000,#C62828,#B71C1C)', emoji:'✈️', badge:'Day 7 · 3 AM Departure', time:'2:30 AM wake-up',
+      title:'EARLY DEPARTURE — ICN 6:35 AM Flight to MNL', sub:'Option A: last AREX · Option B: 1 AM Bus 6021',
+      cap:'<strong>couple.korea2027</strong> 2:30 AM wake-up. Two options to get to ICN. Check-in opens ~4 AM. Duty-free run after security. Annyeong Korea — until next time 🇰🇷❤️',
+      prices:[{l:'Option A: last AREX train',v:'₱248 total'},{l:'Option B: Bus 6021 at 1 AM',v:'₱600–680'}],
+      tip:"Check-in opens ~4 AM so arrive by 4:00–4:30 AM. CONFIRM terminal before leaving hotel: T2 (Korean Air, Delta) vs T1 (everyone else).",
+      hl:['OPTION A — Last AREX Train: Line 1 → Seoul Station (10 min, ₱52) → AREX ~11:32 PM → ICN ~12:30 AM (₱196) · sleep at airport until 4 AM','OPTION B — 1 AM Night Bus: Bus 6021 from Yeouido/Yeongdeungpo at 1 AM → ICN ~2:30 AM (₱600–680) · shorter wait','ICN open 24hrs: rest zones, reclining chairs, 24hr GS25/CU, restaurants 😴','Check-in opens ~4 AM — queue early for smooth immigration','After check-in: duty-free run for K-beauty, soju, Korean snacks 🛍️','Annyeong Korea — until the next trip! 🇰🇷❤️'],
+      warn:'Confirm terminal (T1 vs T2) BEFORE leaving the hotel!',
+      tags:'#ICNAirport #KoreaDeparture #AnnyeongKorea #KoreaTrip2027' },
+  ]},
 ];
 
-var META=[
-  {title:'Feb 15 - 4 AM Arrival + First Night',sub:'ICN, rest, Namdaemun, Myeongdong, Cheonggyecheon, DDP, Hongdae date night'},
-  {title:'Feb 16 - Full Ski Day (Freshest Snow!)',sub:'Elysian Gangchon, ITX train, slopes, sauna, night skiing till 9 PM'},
-  {title:'Feb 17 - Gapyeong Full Day Trip',sub:'Nami Island, Rail Bike, Petite France, Garden of Morning Calm, Sinchon dinner'},
-  {title:'Feb 18 - ALL 4 PALACES + Neighborhoods',sub:'Gyeongbokgung, Bukchon, Ikseon-dong, Jogyesa, Changdeokgung, Gyeonghuigung, Deoksugung, Cheonggyecheon, DDP'},
-  {title:"Feb 19 - Gapyeong Winter: Eobi Ice Valley + Alpaca World",sub:"Frozen waterfall canyon, strawberry picking, alpaca farm, Itaewon dinner"},
-  {title:"Feb 20 - Packed Seoul City Day",sub:"Gwangjang Market, Seongsu-dong, Seoul Forest, Lotte World Tower, Gangnam COEX, Bongeunsa, Han River sunset picnic"},
-  {title:'Feb 21 - 3 AM Wake-up + 6:35 AM Flight to MNL',sub:'Leave hotel 3 AM, Bus 6021 or taxi to ICN, duty-free, ICN to MNL 6:35 AM'},
-];
-
-function buildDays(){
-  var dc=document.getElementById('daycontent'); dc.innerHTML='';
-  META.forEach(function(m,di){
-    var pnl=document.createElement('div');
-    pnl.className='day-panel'+(di===0?' on':'');
-    pnl.id='dp'+di;
-    var h='<p class="day-hdr">'+m.title+'</p><p class="day-sub">'+m.sub+'</p>';
-
-    ACTS.filter(function(a){return a.day===di;}).forEach(function(act){
-      h+='<div class="card"><div class="photo" style="background:'+act.bg+'">'+ico(act.ic)+'<span class="photo-label">'+act.label+'</span><span class="photo-time">'+act.time+'</span></div><div class="card-body"><p class="card-name">'+act.name;
-      if(act.badges) act.badges.forEach(function(b){h+=' <span class="bk '+b.c+'">'+b.t+'</span>';});
-      h+='</p>';
-      if(act.price&&act.price.length){h+='<div class="prices">';act.price.forEach(function(p){if(p.v)h+='<span class="pc">'+(p.l?'<span class="l">'+p.l+'</span>':'')+p.v+'</span>';});h+='</div>';}
-      if(act.tip) h+='<div class="tipbox info">'+si('bulb')+'<span>'+act.tip+'</span></div>';
-      if(act.warns) act.warns.forEach(function(w){h+='<div class="tipbox warn">'+si('warn')+'<span>'+w+'</span></div>';});
-      if(act.hl&&act.hl.length){h+='<ul class="hl">';act.hl.forEach(function(li){h+='<li>'+si('check')+'<span>'+li+'</span></li>';});h+='</ul>';}
-      h+='</div></div>';
-    });
-    pnl.innerHTML=h; dc.appendChild(pnl);
-  });
-  document.querySelectorAll('#daynav .day-btn').forEach(function(b){
-    b.addEventListener('click',function(){
-      var d=this.getAttribute('data-d');
-      activeDay=parseInt(d);
-      document.querySelectorAll('#daynav .day-btn').forEach(function(x){x.classList.remove('on');});
-      document.querySelectorAll('.day-panel').forEach(function(x){x.classList.remove('on');});
-      this.classList.add('on'); document.getElementById('dp'+d).classList.add('on');
-    });
-  });
-}
-var activeDay=0;
-buildDays();
-document.querySelectorAll('#mainnav .nav-btn').forEach(function(b){
-  b.addEventListener('click',function(){
-    var t=this.getAttribute('data-t');
-    document.querySelectorAll('#mainnav .nav-btn').forEach(function(x){x.classList.remove('on');});
-    document.querySelectorAll('.panel').forEach(function(x){x.classList.remove('on');});
-    this.classList.add('on');
-    document.getElementById('t'+t).classList.add('on');
-  });
+// ── BUILD HIGHLIGHTS ──
+var hlEl = document.getElementById('highlights');
+DAYS.forEach(function(day, di) {
+  var div = document.createElement('div');
+  div.className = 'hl';
+  var seen = di >= 5;
+  div.innerHTML = '<div class="hl-ring'+(seen?' seen':'')+'"><div class="hl-inner">'+day.hlEmoji+'</div></div><div class="hl-name">'+day.hlName+'</div>';
+  div.onclick = function() { openStory(di); };
+  hlEl.appendChild(div);
 });
-var TARGET=new Date('2027-02-15T04:00:00+09:00').getTime();
-function pad(n){return String(n).padStart(2,'0');}
-function tick(){
-  var diff=TARGET-Date.now();
-  if(diff<=0){['d','h','m','s'].forEach(function(x){document.getElementById('cd-'+x).textContent='00';});return;}
-  var d=Math.floor(diff/86400000),h=Math.floor((diff%86400000)/3600000),m2=Math.floor((diff%3600000)/60000),s=Math.floor((diff%60000)/1000);
-  document.getElementById('cd-d').textContent=pad(d); document.getElementById('cd-h').textContent=pad(h);
-  document.getElementById('cd-m').textContent=pad(m2); document.getElementById('cd-s').textContent=pad(s);
-}
-tick(); setInterval(tick,1000);
 
+// ── BUILD GRID ──
+var gridEl = document.getElementById('grid');
+DAYS.forEach(function(day, di) {
+  var lbl = document.createElement('div');
+  lbl.className = 'day-label';
+  lbl.innerHTML = '<span>'+day.label+'</span><span class="dl-date">'+day.date+'</span>';
+  gridEl.appendChild(lbl);
+  var g = document.createElement('div');
+  g.className = 'grid';
+  day.acts.forEach(function(act, ai) {
+    var item = document.createElement('div');
+    item.className = 'grid-item';
+    var multiHtml = day.acts.length > 1 ? '<div class="gi-multi">'+day.acts.map(function(_,i){return '<span class="'+(i===ai?'cur':'')+'"></span>';}).join('')+'</div>' : '';
+    item.innerHTML = '<div class="gi-bg" style="background:'+act.bg+'"></div><div class="gi-emoji">'+act.emoji+'</div><div class="gi-badge">'+act.badge+'</div>'+multiHtml+'<div class="gi-overlay"><div class="gi-name">'+act.title+'</div><div class="gi-time">'+act.time+'</div></div>';
+    item.onclick = function() { openPost(di, ai); };
+    g.appendChild(item);
+  });
+  while(g.children.length % 3 !== 0) {
+    var f = document.createElement('div');
+    f.className = 'grid-item';
+    f.style.cssText = 'background:#f0f0f0;display:flex;align-items:center;justify-content:center';
+    f.innerHTML = '<span style="font-size:24px;opacity:.2">🇰🇷</span>';
+    g.appendChild(f);
+  }
+  gridEl.appendChild(g);
+});
+
+// ── STORY LOGIC ──
+var storySetIdx=0, storySlideIdx=0, storyTimer=null, storyProgress=0, storyPaused=false, storyTouchStartY=0;
+var STORY_DUR=5500;
+
+function openStory(setIdx) {
+  storySetIdx=setIdx; storySlideIdx=0;
+  document.getElementById('storyOverlay').classList.add('open');
+  document.body.style.overflow='hidden';
+  renderStorySlide(); startStoryTimer();
+  var o=document.getElementById('storyOverlay');
+  o.addEventListener('touchstart',onSTouchStart,{passive:true});
+  o.addEventListener('touchend',onSTouchEnd,{passive:true});
+  o.addEventListener('mousedown',onSMouseDown);
+  o.addEventListener('mouseup',onSMouseUp);
+}
+function onSTouchStart(e){storyTouchStartY=e.touches[0].clientY;storyPaused=true;stopStoryTimer();}
+function onSTouchEnd(e){var dy=e.changedTouches[0].clientY-storyTouchStartY;if(dy>70){closeStory();return;}storyPaused=false;startStoryTimer();}
+function onSMouseDown(){storyPaused=true;stopStoryTimer();}
+function onSMouseUp(){storyPaused=false;startStoryTimer();}
+function closeStory(){
+  stopStoryTimer();
+  document.getElementById('storyOverlay').classList.remove('open');
+  document.body.style.overflow='';
+  var o=document.getElementById('storyOverlay');
+  o.removeEventListener('touchstart',onSTouchStart);
+  o.removeEventListener('touchend',onSTouchEnd);
+  o.removeEventListener('mousedown',onSMouseDown);
+  o.removeEventListener('mouseup',onSMouseUp);
+}
+function storyNav(dir){
+  var set=DAYS[storySetIdx].acts;
+  var next=storySlideIdx+dir;
+  if(next<0||next>=set.length){closeStory();return;}
+  storySlideIdx=next; storyProgress=0;
+  renderStorySlide(); stopStoryTimer(); startStoryTimer();
+}
+function startStoryTimer(){
+  stopStoryTimer();
+  var t=Date.now()-(storyProgress/100)*STORY_DUR;
+  storyTimer=setInterval(function(){
+    if(storyPaused)return;
+    storyProgress=Math.min(100,(Date.now()-t)/STORY_DUR*100);
+    updateStoryBars();
+    if(storyProgress>=100)storyNav(1);
+  },40);
+}
+function stopStoryTimer(){clearInterval(storyTimer);storyTimer=null;}
+function updateStoryBars(){
+  document.querySelectorAll('.story-bar-fill').forEach(function(f,i){
+    if(i<storySlideIdx)f.style.width='100%';
+    else if(i===storySlideIdx)f.style.width=storyProgress+'%';
+    else f.style.width='0%';
+  });
+}
+function renderStorySlide(){
+  var set=DAYS[storySetIdx].acts;
+  var day=DAYS[storySetIdx];
+  var act=set[storySlideIdx];
+  document.getElementById('storyProgs').innerHTML=set.map(function(){return '<div class="story-bar-track"><div class="story-bar-fill"></div></div>';}).join('');
+  document.getElementById('storyAv').textContent=day.hlEmoji;
+  document.getElementById('storyAgo').textContent=day.date;
+  var pts=(act.hl||[]).slice(0,3).map(function(p){return '<div class="story-pt">'+p+'</div>';}).join('');
+  var chips='';
+  if(act.prices)act.prices.slice(0,2).forEach(function(p){chips+='<span class="story-chip">'+p.l+': '+p.v+'</span>';});
+  var tipH=act.tip?'<div class="story-tip">💡 '+act.tip+'</div>':'';
+  var warnH=act.warn?'<div class="story-warn">⚠️ '+act.warn+'</div>':'';
+  document.getElementById('storySlide').innerHTML=
+    '<div class="story-bg" style="background:'+act.bg+'"></div>'+
+    '<div class="story-content">'+
+      '<div class="story-emoji">'+act.emoji+'</div>'+
+      '<div class="story-badge">'+act.badge+' · '+act.time+'</div>'+
+      '<div class="story-title">'+act.title+'</div>'+
+      '<div class="story-sub">'+act.sub+'</div>'+
+      (chips?'<div class="story-chips">'+chips+'</div>':'')+
+      (pts?'<div class="story-pts">'+pts+'</div>':'')+
+      tipH+warnH+
+    '</div>';
+  updateStoryBars();
+}
+
+// ── CAROUSEL LOGIC ──
+var curDay=0, curSlide=0, carStartX=0, carDragging=false, carDx=0;
+function openPost(dayIdx, actIdx){
+  curDay=dayIdx; curSlide=actIdx;
+  var acts=DAYS[dayIdx].acts;
+  var day=DAYS[dayIdx];
+  document.getElementById('phAv').textContent=day.hlEmoji;
+  document.getElementById('phName').textContent=acts[actIdx].title;
+  document.getElementById('phLoc').textContent=day.label;
+  var track=document.getElementById('carouselTrack');
+  track.innerHTML=''; track.style.transition='none'; track.style.transform='translateX(0)';
+  acts.forEach(function(act){
+    var s=document.createElement('div'); s.className='carousel-slide';
+    s.innerHTML='<div class="cs-bg" style="background:'+act.bg+'"></div><div class="cs-emoji">'+act.emoji+'</div><div class="cs-badge">'+act.badge+' · '+act.time+'</div><div class="cs-overlay"><div class="cs-title">'+act.title+'</div><div class="cs-sub">'+act.sub+'</div></div>';
+    track.appendChild(s);
+  });
+  var dr=document.getElementById('dotsRow');
+  dr.innerHTML=acts.length>1?acts.map(function(_,i){return '<div class="dot'+(i===actIdx?' on':'')+'"></div>';}).join(''):'';
+  renderPostBody(actIdx); setCarSlide(actIdx,false);
+  document.getElementById('postBackdrop').classList.add('open');
+  document.body.style.overflow='hidden';
+  document.querySelector('.modal-scroll').scrollTop=0;
+  var wrap=document.getElementById('carouselWrap');
+  wrap.ontouchstart=function(e){carStartX=e.touches[0].clientX;carDragging=true;carDx=0;};
+  wrap.ontouchmove=function(e){if(!carDragging)return;carDx=e.touches[0].clientX-carStartX;var b=-curSlide*100;document.getElementById('carouselTrack').style.transition='none';document.getElementById('carouselTrack').style.transform='translateX(calc('+b+'% + '+carDx+'px))';};
+  wrap.ontouchend=function(){carDragging=false;if(carDx<-50)gotoSlide(curSlide+1);else if(carDx>50)gotoSlide(curSlide-1);else setCarSlide(curSlide,true);carDx=0;};
+  wrap.onmousedown=function(e){carStartX=e.clientX;carDragging=true;carDx=0;e.preventDefault();};
+  window.onmousemove=function(e){if(!carDragging)return;carDx=e.clientX-carStartX;var b=-curSlide*100;document.getElementById('carouselTrack').style.transition='none';document.getElementById('carouselTrack').style.transform='translateX(calc('+b+'% + '+carDx+'px))';};
+  window.onmouseup=function(){if(!carDragging)return;carDragging=false;if(carDx<-50)gotoSlide(curSlide+1);else if(carDx>50)gotoSlide(curSlide-1);else setCarSlide(curSlide,true);carDx=0;};
+}
+function gotoSlide(idx){
+  var acts=DAYS[curDay].acts;
+  if(idx<0||idx>=acts.length){setCarSlide(curSlide,true);return;}
+  curSlide=idx; setCarSlide(idx,true); renderPostBody(idx);
+  document.getElementById('phName').textContent=acts[idx].title;
+  document.querySelector('.modal-scroll').scrollTop=0;
+  document.querySelectorAll('#dotsRow .dot').forEach(function(d,i){d.classList.toggle('on',i===idx);});
+}
+function setCarSlide(idx,animate){
+  var t=document.getElementById('carouselTrack');
+  t.style.transition=animate?'transform .28s cubic-bezier(.4,0,.2,1)':'none';
+  t.style.transform='translateX(-'+(idx*100)+'%)';
+}
+function renderPostBody(idx){
+  var act=DAYS[curDay].acts[idx];
+  var pr=act.prices?'<div class="pr-row">'+act.prices.map(function(p){return '<span class="pr-chip"><b>'+p.l+'</b>: '+p.v+'</span>';}).join('')+'</div>':'';
+  var tip=act.tip?'<div class="tip-b">💡 '+act.tip+'</div>':'';
+  var warn=act.warn?'<div class="warn-b">⚠️ '+act.warn+'</div>':'';
+  var hl=act.hl?'<ul class="hl-ul">'+act.hl.map(function(t){return '<li>'+t+'</li>';}).join('')+'</ul>':'';
+  var tags=act.tags?'<div class="post-tags"><span class="htag">'+act.tags+'</span></div>':'';
+  document.getElementById('postBody').innerHTML='<div class="post-caption">'+act.cap+'</div>'+pr+tip+warn+hl+tags;
+}
+function closePostModal(e){
+  if(e&&e.target!==document.getElementById('postBackdrop'))return;
+  document.getElementById('postBackdrop').classList.remove('open');
+  document.body.style.overflow='';
+  window.onmousemove=null; window.onmouseup=null;
+  var wrap=document.getElementById('carouselWrap');
+  if(wrap){wrap.ontouchstart=wrap.ontouchmove=wrap.ontouchend=wrap.onmousedown=null;}
+}
+
+// ── TABS ──
+function switchTab(tab,el){
+  document.querySelectorAll('.tab-btn').forEach(function(b){b.classList.remove('on');});
+  el.classList.add('on');
+  document.getElementById('grid').style.display=tab==='grid'?'block':'none';
+  document.getElementById('weather').className='panel'+(tab==='weather'?' on':'');
+  document.getElementById('budget').className='panel'+(tab==='budget'?' on':'');
+  window.scrollTo(0,0);
+}
+
+// ── BUDGET ──
 var fixed=[
-  {name:'AREX airport train (one-way)',amt:380,note:'ICN to Seoul Station · ₩9,500'},
+  {name:'Airport Limousine Bus 6021 (one-way)',amt:640,note:'ICN → Yeongdeungpo · 24 hrs'},
   {name:'T-money card deposit',amt:100,note:'refundable · subway + bus'},
   {name:'Royal Palace Pass (5 palaces)',amt:400,note:'₩10,000 · Gyeongbokgung, Changdeokgung, Deoksugung + more'},
-  {name:'Changdeokgung Secret Garden',amt:200,note:'₩5,000 extra on top of palace pass'},
+  {name:'Changdeokgung Secret Garden',amt:200,note:'₩5,000 extra · book online'},
   {name:'Nami Island entry + ferry',amt:760,note:'₩19,000 · includes round-trip ferry'},
-  {name:'ITX train roundtrip Gapyeong',amt:456,note:'₩11,400 · Seoul to Gapyeong return'},
+  {name:'ITX train roundtrip (Gapyeong)',amt:456,note:'₩11,400 · Seoul ↔ Gapyeong return'},
   {name:'Petite France entrance',amt:480,note:'₩12,000'},
-  {name:'Garden of Morning Calm',amt:440,note:'₩11,000'},
-  {name:'N Seoul Tower cable car',amt:480,note:'₩12,000 · round-trip'},
+  {name:'Garden of Morning Calm',amt:440,note:'₩11,000 · includes winter lighting'},
   {name:'Couple hanbok rental',amt:1800,note:'~₩45,000 for both · includes free palace entry'},
+  {name:'Eobi Ice Valley entry',amt:200,note:'₩5,000'},
+  {name:'Gapyeong strawberry picking',amt:540,note:'~₩13,500 per person'},
+  {name:'Alpaca World entrance',amt:600,note:'₩15,000 · book timed entry online'},
   {name:'Food budget (₱2,000/day × 7)',amt:14000,note:'street food, restaurants, cafes'},
   {name:'Daily transport (₱800/day × 7)',amt:5600,note:'subway, buses, occasional taxi'},
 ];
 var shared=[
-  {name:'Ski resort package (lift + rental)',total:4000,note:'~₩100,000 · Elysian Gangchon'},
+  {name:'Ski resort full day package (per person)',amt:4000,note:'~₩100,000 · Elysian Gangchon'},
+  {name:'Gapyeong Rail Bike (couple cart)',amt:1200,note:'₩30,000 total for couple · split ₩15,000 each'},
 ];
 var opts=[
-  {id:'oa',name:'N Tower observation deck (per person)',amt:840,on:false},
-  {id:'ob',name:'Gangchon Rail Bike (couple)',amt:800,on:false},
-  {id:'oc',name:'Jjimjilbang couple spa day (per person)',amt:600,on:false},
-  {id:'od',name:'Korean Cooking Class (per person)',amt:2400,on:false},
-  {id:'oe',name:'DMZ Day Tour (per person)',amt:2800,on:false},
-  {id:'of',name:'Second ski day — Vivaldi Park (per person)',amt:3600,on:false},
-  {id:'og',name:'Han River couple night picnic',amt:1200,on:false},
-  {id:'oh',name:'Professional couple photoshoot',amt:3200,on:false},
+  {name:'N Seoul Tower observation deck (per person)',amt:840,on:false},
+  {name:'Jjimjilbang couple spa day (per person)',amt:600,on:false},
+  {name:'Korean cooking class (per person)',amt:2400,on:false},
+  {name:'DMZ Day Tour (per person)',amt:2800,on:false},
+  {name:'Second ski day — Vivaldi Park (per person)',amt:3600,on:false},
+  {name:'Professional couple photoshoot',amt:3200,on:false},
+  {name:'Han River banana boat ride',amt:400,on:false},
+  {name:'Banpo Bridge Rainbow Fountain cruise',amt:800,on:false},
 ];
 function fmt(n){return '₱'+Math.round(n).toLocaleString();}
 function calc(){
   var f=fixed.reduce(function(a,c){return a+c.amt;},0);
-  var s=shared.reduce(function(a,c){return a+c.total;},0);
+  var s=shared.reduce(function(a,c){return a+c.amt;},0);
   var o=opts.filter(function(x){return x.on;}).reduce(function(a,c){return a+c.amt;},0);
   document.getElementById('totpp').textContent=fmt(f+s+o);
   var fl=document.getElementById('fixedlist'); fl.innerHTML='';
-  fixed.forEach(function(c){var r=document.createElement('div');r.className='brow';r.innerHTML='<span class="bn">'+c.name+(c.note?' <span class="bnote">· '+c.note+'</span>':'')+'</span><span class="ba">'+fmt(c.amt)+'</span>';fl.appendChild(r);});
+  fixed.forEach(function(c){fl.innerHTML+='<div class="brow"><div><div class="br-name">'+c.name+'</div>'+(c.note?'<div class="br-note">'+c.note+'</div>':'')+'</div><div class="br-amt">'+fmt(c.amt)+'</div></div>';});
   var sl=document.getElementById('sharedlist'); sl.innerHTML='';
-  shared.forEach(function(c){var r=document.createElement('div');r.className='brow';r.innerHTML='<span class="bn">'+c.name+' <span class="bnote">· '+c.note+'</span></span><span class="ba">'+fmt(c.total)+'</span>';sl.appendChild(r);});
+  shared.forEach(function(c){sl.innerHTML+='<div class="brow"><div><div class="br-name">'+c.name+'</div><div class="br-note">'+c.note+'</div></div><div class="br-amt">'+fmt(c.amt)+'</div></div>';});
   var ol=document.getElementById('optlist'); ol.innerHTML='';
   opts.forEach(function(c){
-    var d=document.createElement('div'); d.className='opt'+(c.on?' on':'');
-    d.innerHTML='<div class="ochk">'+(c.on?chk():'')+'</div><span class="oname">'+c.name+'</span><span class="oprice">'+fmt(c.amt)+'</span>';
-    d.addEventListener('click',function(){c.on=!c.on;calc();});
-    ol.appendChild(d);
+    var div=document.createElement('div'); div.className='opt-row'+(c.on?' on':'');
+    div.innerHTML='<div class="opt-chk">'+(c.on?'<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>':'')+'</div><div class="opt-name">'+c.name+'</div><div class="opt-amt">'+fmt(c.amt)+'</div>';
+    div.onclick=function(){c.on=!c.on;calc();};
+    ol.appendChild(div);
   });
 }
 calc();
-})();
 </script>
 </body>
 </html>
